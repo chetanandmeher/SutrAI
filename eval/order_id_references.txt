@@ -1,0 +1,22 @@
+
+agents\sql_agent.py:14:orders(order_id PK, customer_id, order_status, order_purchase_timestamp, order_approved_at,
+agents\sql_agent.py:16:order_items(order_id, order_item_id, product_id, seller_id, shipping_limit_date, price, freight_value)
+agents\sql_agent.py:17:order_payments(order_id, payment_sequential, payment_type, payment_installments, payment_value)
+agents\sql_agent.py:18:order_reviews(review_id, order_id, review_score, review_comment_title, review_comment_message,
+agents\sql_agent.py:30:  Aggregate each in its own subquery or CTE per order_id BEFORE joining. Never SUM across a fan-out join.
+eval\build_rag_pool.py:25:                "order_id": metadata.get("order_id"),
+eval\evaluate_rag.py:104:                "order_id": item["metadata"].get("order_id"),
+eval\export_indexed_reviews.py:11:        metadata->>'order_id' AS order_id,
+eval\export_indexed_reviews.py:26:        "order_id": row[2],
+eval\export_rag_candidates.py:25:    SELECT review_id, order_id, review_score, review_comment_message
+eval\export_rag_candidates.py:42:        "order_id": row[1],
+eval\ground_truth.py:32:        JOIN order_items i ON o.order_id = i.order_id
+eval\ground_truth.py:48:        JOIN order_reviews r ON o.order_id = r.order_id
+eval\validate_rag_labels.py:15:    (str(row["review_id"]), str(row["order_id"]))
+eval\validate_rag_labels.py:20:    (str(review_id), str(order_id))
+eval\validate_rag_labels.py:22:    for review_id, order_id in question["relevant_reviews"]
+eval\validate_rag_labels.py:35:    for review_id, order_id in sorted(missing_pairs):
+eval\validate_rag_labels.py:36:        print(f"{review_id} | {order_id}")
+rag\ingest_reviews.py:25:            SELECT review_id, order_id, review_score, review_comment_message
+rag\ingest_reviews.py:59:                                "order_id": r[1],
+

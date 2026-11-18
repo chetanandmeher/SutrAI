@@ -1,0 +1,366 @@
+{
+  "total_questions": 7,
+  "precision_at_5": 0.8,
+  "pooled_recall_at_5": 0.2795,
+  "mrr_at_5": 0.9286,
+  "evaluation_note": "Recall is measured against manually labeled relevant reviews in the judged top-20 retrieval pool, not the complete review corpus.",
+  "results": [
+    {
+      "id": "RAG_01",
+      "question": "What complaints do customers have about late deliveries?",
+      "precision_at_5": 1.0,
+      "pooled_recall_at_5": 0.2381,
+      "mrr_at_5": 1.0,
+      "relevant_retrieved": 5,
+      "relevant_in_judged_pool": 21,
+      "retrieved": [
+        {
+          "chunk_id": 3287,
+          "review_id": "18fd8314a11f9a00cb85e8ef9aa70042",
+          "order_id": "7a363dd1eb003c19a36e4eba73e3105d",
+          "similarity": 0.0274,
+          "relevant": true,
+          "text": "O status da entrega é ruim, sempre desatualizado, mostra que teve erro na entrega, mudam o prazo e no fim entregam antes. "
+        },
+        {
+          "chunk_id": 2703,
+          "review_id": "14ab06af2677555bfcf9ff2e64a1b203",
+          "order_id": "1432d48030ced821a4afaabcfc2a8b0f",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Sem satisfação sobre atraso na entrega"
+        },
+        {
+          "chunk_id": 4541,
+          "review_id": "22f1429c44c757fb27fed0182fb78dab",
+          "order_id": "f9924bb345cacfbf0fda3cca1dfffcd8",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Produto estava com prazo de entrega para 13/04. No momento está em dois dias de atraso. Necessário verificar o porquê do atraso e regularizar entrega. Presente de aniversário pendente de entrega."
+        },
+        {
+          "chunk_id": 2129,
+          "review_id": "103670763dad1a1f58fa53c721e34ee1",
+          "order_id": "097941e2db84b005d04de9e867674226",
+          "similarity": 0.0161,
+          "relevant": true,
+          "text": "A minha mercadoria não foi entregue. No correio o status está como foi entregue. Foi entregue somente um informativo falando que em breve o produto seria entregue"
+        },
+        {
+          "chunk_id": 3723,
+          "review_id": "1c6e23b615b667e798d91396baefc502",
+          "order_id": "6f56d701fdaa7fc3575ddda3bed5fbbb",
+          "similarity": 0.0161,
+          "relevant": true,
+          "text": "O que me incomoda nessa compra é a demora na entrega do produto. Sou cliente lannister a muito tempo e sempre satisfeita com a compra, mas infelizmente, as últimas compras não recebi ."
+        }
+      ]
+    },
+    {
+      "id": "RAG_02",
+      "question": "Which customers report that their orders were never delivered?",
+      "precision_at_5": 1.0,
+      "pooled_recall_at_5": 0.3333,
+      "mrr_at_5": 1.0,
+      "relevant_retrieved": 5,
+      "relevant_in_judged_pool": 15,
+      "retrieved": [
+        {
+          "chunk_id": 3673,
+          "review_id": "1c1686a8e031498fb7a0ef51a84acadd",
+          "order_id": "c3483e54e973d333c6365c217f4422b9",
+          "similarity": 0.0288,
+          "relevant": true,
+          "text": "Não recebi meu pedido, não retornaram os emails que enviei pedindo informações de entrega. Pela falta de compromisso e pelo desrespeito ao cliente(consumidor) realizei o cancelamento."
+        },
+        {
+          "chunk_id": 2942,
+          "review_id": "165a579a9ffd2a7466ec6eb36160986c",
+          "order_id": "c6e5497dfca3f588f76e2542f686a5f7",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Pedi 2 pulseiras e 3 colares, todos para dar de presente, e só recebi 1 colar! E o pior é que consta no status do pedido, pedido entregue, sendo que só recebi um! Frete caro e não veio os produtos!"
+        },
+        {
+          "chunk_id": 2707,
+          "review_id": "14b33ac24083bd93da570659da1630af",
+          "order_id": "d0fd9595949095f91592a79bd26a2126",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Pedido não entregue (prazo de entrega não obedecido)"
+        },
+        {
+          "chunk_id": 1617,
+          "review_id": "0c8e7347f1cdd2aede37371543e3d163",
+          "order_id": "81c2d284094f3b39baddefb519a30149",
+          "similarity": 0.0161,
+          "relevant": true,
+          "text": "UM DOS PRODUTOS (ENTREGA02) COMPRADOS NESTE PEDIDO NAO RECEBI AINDA E OUTRO (ENTREGA01) RECEBI EMAIL QUE ESTA COM DIFICULDADES NA ENTREGA E NÃO TIVE MAIS NOTICIAS "
+        },
+        {
+          "chunk_id": 2731,
+          "review_id": "14ea6decad5dd6bad11cfb2afd01c478",
+          "order_id": "334e118f51cc0e200822d5f117db5f19",
+          "similarity": 0.0159,
+          "relevant": true,
+          "text": "Foram comprados 2 produtos, que seriam entregues pelo mesma loja e fornecedor. Entretanto, somente um dos produtos foi entregue. O outro não foi, e consta no sistema como enviado.\nSem resposta da loj"
+        }
+      ]
+    },
+    {
+      "id": "RAG_03",
+      "question": "What problems do customers report about damaged or defective products?",
+      "precision_at_5": 0.6,
+      "pooled_recall_at_5": 0.2727,
+      "mrr_at_5": 1.0,
+      "relevant_retrieved": 3,
+      "relevant_in_judged_pool": 11,
+      "retrieved": [
+        {
+          "chunk_id": 1243,
+          "review_id": "09e1f7e3288ae0f68dda1d8f69f37bb2",
+          "order_id": "24c78c3d4dc744978c9e4e077d3caf8e",
+          "similarity": 0.029,
+          "relevant": true,
+          "text": "Antes de recomendar a loja preciso ver se a loja irá trocar o produto que veio com defeito. Para mim minha compra não foi finalizada ainda."
+        },
+        {
+          "chunk_id": 1063,
+          "review_id": "086dec1e6f88fe8891477eab0937b56a",
+          "order_id": "9137955f9938245295c3978ead342e06",
+          "similarity": 0.0164,
+          "relevant": false,
+          "text": "Entrega antes do prazo... só a caixa que estava bastante danificada e amassada, porém não ocasionou dano ao produto."
+        },
+        {
+          "chunk_id": 931,
+          "review_id": "074c39cb5e90578eaeb560e6f632ae1e",
+          "order_id": "2edf506c823b1a3bc6d134864bc4c10c",
+          "similarity": 0.0164,
+          "relevant": false,
+          "text": "Produto de péssima qualidade e acabamento. "
+        },
+        {
+          "chunk_id": 457,
+          "review_id": "038e065415fb159cc302f06417fbba8f",
+          "order_id": "f7e0f7c5ef9b8b1ea79d697dd2259897",
+          "similarity": 0.0161,
+          "relevant": true,
+          "text": "Esta com defeito danificou todas as imagem salvas e eu perdi 182 fotos."
+        },
+        {
+          "chunk_id": 2020,
+          "review_id": "0f8d635460c4b82123f33aa580b59c0f",
+          "order_id": "8e609b18311a0558de0c7508a9331031",
+          "similarity": 0.0161,
+          "relevant": true,
+          "text": "Produto com avarias e péssima qualidade "
+        }
+      ]
+    },
+    {
+      "id": "RAG_04",
+      "question": "What complaints involve missing or incorrect items?",
+      "precision_at_5": 0.4,
+      "pooled_recall_at_5": 0.1429,
+      "mrr_at_5": 1.0,
+      "relevant_retrieved": 2,
+      "relevant_in_judged_pool": 14,
+      "retrieved": [
+        {
+          "chunk_id": 4334,
+          "review_id": "21669c0b1d532d754a411e09973d118d",
+          "order_id": "28eaf28c1a7f1e6d917f465578bb1b43",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Produto entregue errado, reclamação realizada, solicitado de troca aberta a mais de uma semana e nem sinal da empresa"
+        },
+        {
+          "chunk_id": 2073,
+          "review_id": "0fdb93c96bcacb37101b6c9c0d887a51",
+          "order_id": "7ae297a5353312db3c47746c3b1a8527",
+          "similarity": 0.0161,
+          "relevant": true,
+          "text": " O meu produto não veio conforme a compra,faltou um item. (planilha de avaliação). "
+        },
+        {
+          "chunk_id": 190,
+          "review_id": "014bb9d880369a341aec44c060de24d5",
+          "order_id": "f3d641d9bf49ba992b999d270bef052b",
+          "similarity": 0.0159,
+          "relevant": false,
+          "text": "Meu produto não foi entregue ainda. E o vendedor não me dar nenhuma satisfação eu já mandamei vários email msg de reclamação é até agora nada foi feito "
+        },
+        {
+          "chunk_id": 4065,
+          "review_id": "1f25f1a62403bca90ae5ab2e69583791",
+          "order_id": "eab958e760e3a29d059399d02b913fb4",
+          "similarity": 0.0156,
+          "relevant": false,
+          "text": "produto entregue fora do praso, devido a falhas do correio, entregue em 18/03\nobrigado"
+        },
+        {
+          "chunk_id": 4300,
+          "review_id": "211b5045188b0254c3c7cbab1d7839a6",
+          "order_id": "18ca340d8c5cef7fba3c9c18efce43e9",
+          "similarity": 0.0154,
+          "relevant": false,
+          "text": "o produto veio com defeito. ja mandei email reclamando"
+        }
+      ]
+    },
+    {
+      "id": "RAG_05",
+      "question": "What issues do customers report regarding refunds and cancellations?",
+      "precision_at_5": 1.0,
+      "pooled_recall_at_5": 0.3846,
+      "mrr_at_5": 1.0,
+      "relevant_retrieved": 5,
+      "relevant_in_judged_pool": 13,
+      "retrieved": [
+        {
+          "chunk_id": 1137,
+          "review_id": "08ec98a01d702afc8fb1ed605a2f7a6a",
+          "order_id": "659931410d19a914a52ca0a46bc7992a",
+          "similarity": 0.0303,
+          "relevant": true,
+          "text": "Antes do produto ser entregue eu pedi o cancelamento da compra. Estou aguardando o reembolso. Obrigada."
+        },
+        {
+          "chunk_id": 3673,
+          "review_id": "1c1686a8e031498fb7a0ef51a84acadd",
+          "order_id": "c3483e54e973d333c6365c217f4422b9",
+          "similarity": 0.0292,
+          "relevant": true,
+          "text": "Não recebi meu pedido, não retornaram os emails que enviei pedindo informações de entrega. Pela falta de compromisso e pelo desrespeito ao cliente(consumidor) realizei o cancelamento."
+        },
+        {
+          "chunk_id": 147,
+          "review_id": "010b2ed38d56504791d0b0c6a6b29cd1",
+          "order_id": "337a9f67f1a66c4e9a9734911c1bf2ee",
+          "similarity": 0.0272,
+          "relevant": true,
+          "text": "Um dos três produtos faturados ( etapa 2) foi enviada errada ( outra composição) do que foi pedido e faturado na nota fiscal. Já solicitei o cancelamento do pedido, só me causou transtorno a compra."
+        },
+        {
+          "chunk_id": 3570,
+          "review_id": "1b33a8c4a9148ff6ce18c0a2a15d815a",
+          "order_id": "135fc78debb3120eb1b780ff815ada9c",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Produto devolvido devido cancelamento compra "
+        },
+        {
+          "chunk_id": 3955,
+          "review_id": "1e3d2a60a2b5c77e60112200a1df4b4d",
+          "order_id": "acaa91b87fbd9e2ff9171781226f73e9",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Comprei uma coisa e recebi uma falsificação. Cancelei o pedido e msm assim foi entregue como se não ouvesse o cancelamento."
+        }
+      ]
+    },
+    {
+      "id": "RAG_06",
+      "question": "What complaints mention poor seller communication or customer support?",
+      "precision_at_5": 0.6,
+      "pooled_recall_at_5": 0.2,
+      "mrr_at_5": 0.5,
+      "relevant_retrieved": 3,
+      "relevant_in_judged_pool": 15,
+      "retrieved": [
+        {
+          "chunk_id": 1386,
+          "review_id": "0afacfbf7227b075c599d63c9c0c2c0a",
+          "order_id": "5bf333c26f367c6992c8c4eff042bb4b",
+          "similarity": 0.0301,
+          "relevant": false,
+          "text": "Empresa comprometida com o atendimento ao cliente e idônea nos produtos que vendem "
+        },
+        {
+          "chunk_id": 1473,
+          "review_id": "0b9740c80aede334780599d37387228c",
+          "order_id": "1fda06c4d014e1f00378d6f6e1d46cd1",
+          "similarity": 0.028,
+          "relevant": true,
+          "text": "Péssimo atendimento, não entregam no prazo, sem qualquer tipo de satisfação ao cliente. Horrível!"
+        },
+        {
+          "chunk_id": 3812,
+          "review_id": "1d31a370d6a5a747a52c3f3f58adab85",
+          "order_id": "fa98b1c89208380c565ec7c07a8f3e7a",
+          "similarity": 0.026,
+          "relevant": true,
+          "text": "Eu fiz a compra de 2 cobertores a loja me manda só um , fiz uma reclamação é até agora não fui atendida se caso , não for atendida tomarei providências "
+        },
+        {
+          "chunk_id": 2203,
+          "review_id": "10b73c782535c2ca6f5df1188f3785a6",
+          "order_id": "d8734ba226623cf1c86b3cce8cbffa78",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Pessimo atendimento, sem canal de reclamação \nfornecedor "
+        },
+        {
+          "chunk_id": 1427,
+          "review_id": "0b43d64edf7d5be4581f9e5dc2314389",
+          "order_id": "b7867c80a94b0b3e95293f637d913dbd",
+          "similarity": 0.0161,
+          "relevant": false,
+          "text": "Na minha opinião, esse vendedor corresponde às expectativas do cliente. Eu recomendo, nota 10"
+        }
+      ]
+    },
+    {
+      "id": "RAG_07",
+      "question": "What problems do customers experience with delivery services and carriers?",
+      "precision_at_5": 1.0,
+      "pooled_recall_at_5": 0.3846,
+      "mrr_at_5": 1.0,
+      "relevant_retrieved": 5,
+      "relevant_in_judged_pool": 13,
+      "retrieved": [
+        {
+          "chunk_id": 2400,
+          "review_id": "12416af18a71403380ecd6e6ca53332c",
+          "order_id": "83a9c18344682fcbc57696019ff1ff2a",
+          "similarity": 0.0313,
+          "relevant": true,
+          "text": "Não posso dizer que não recomendo a loja, pois acredito que o problema na entrega foi com a transportadora (correios). Não deixaria de comprar com a loja por conta deste problema na entrega."
+        },
+        {
+          "chunk_id": 1313,
+          "review_id": "0a6843048d2229baf1201b4783d38df3",
+          "order_id": "e4332fcdfe53c13a7ac6feff6e31b6b2",
+          "similarity": 0.0308,
+          "relevant": true,
+          "text": "O serviço de entrega é feita através dos correios e este apesar de ter sido pega taxa entrega , não entrega na residência.Qdo puder ir fazer a retirada na ag. central o produto já havia sido devolvido"
+        },
+        {
+          "chunk_id": 3287,
+          "review_id": "18fd8314a11f9a00cb85e8ef9aa70042",
+          "order_id": "7a363dd1eb003c19a36e4eba73e3105d",
+          "similarity": 0.0286,
+          "relevant": true,
+          "text": "O status da entrega é ruim, sempre desatualizado, mostra que teve erro na entrega, mudam o prazo e no fim entregam antes. "
+        },
+        {
+          "chunk_id": 1556,
+          "review_id": "0c39a257fd58b5df6440064ef5670ac7",
+          "order_id": "599e2a8d1c0c82f50ac6d898c2efaa94",
+          "similarity": 0.0164,
+          "relevant": true,
+          "text": "Muito ruim a entrega do correios... No site constava 3 tentativas de entrega e os correios não deixarem nenhum aviso de entrega em minha caixa de correio..."
+        },
+        {
+          "chunk_id": 2129,
+          "review_id": "103670763dad1a1f58fa53c721e34ee1",
+          "order_id": "097941e2db84b005d04de9e867674226",
+          "similarity": 0.0161,
+          "relevant": true,
+          "text": "A minha mercadoria não foi entregue. No correio o status está como foi entregue. Foi entregue somente um informativo falando que em breve o produto seria entregue"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+            review_id             | chunk_count | distinct_texts |                                              order_ids                                               
+----------------------------------+-------------+----------------+------------------------------------------------------------------------------------------------------
+ 08528f70f579f0c830189efc523d2182 |           3 |              1 | {03310aa823a66056268a3bab36e827fb,7813842ae95e8c497fc0233232ae815a,53c71d3953507c6239ff73917ed358c9}
+ 2172867fd5b1a55f98fe4608e1547b4b |           3 |              1 | {559d606ac642899e44550f194fec7e08,e11ba7fd8fe0728dcd89efddcda9fb11,ac6e61336e852cdc45fe59ada3763a66}
+ 00130cbe1f9d422698c812ed8ded1919 |           2 |              1 | {04a28263e085d399c97ae49e0b477efa,dfcdfc43867d1c1381bfaf62d6b9c195}
+ 0174caf0ee5964646040cd94e15ac95e |           2 |              1 | {f93a732712407c02dce5dd5088d0f47b,74db91e33b4e1fd865356c89a61abf1f}
+ 0254bd905dc677a6078990aad3331a36 |           2 |              1 | {331b367bdd766f3d1cf518777317b5d9,5bf226cf882c5bf4247f89a97c86f273}
+ 03a6a25db577d0689440933055111897 |           2 |              1 | {3fde8b7313af6b37b84b5c7594d7add0,2acfdc5131ff2cf4433e668454c9784c}
+ 0498e9722f8757426c3c3ee0b91e666d |           2 |              1 | {041aa5c38550649d5b51f38ba03a29a4,f318811b0fd898d1edf78d6841470be2}
+ 0501aab2f381486c36bf0f071442c0c2 |           2 |              1 | {0068c109948b9a1dfb8530d1978acef3,d75cb3755738c4ae466303358f97bc55}
+ 0655af56f10bc3ef8e3810610828f294 |           2 |              1 | {d9e44c3fd2ce16086619f299e92e12d8,84f5e6c0a0e3155e38c00f434ba90ce8}
+ 08531aa0b3844944e7aeef53530f8598 |           2 |              1 | {b1fdceb28f70830d69114860d8b1175a,a65820c7e4307f72117e77fce6be1074}
+ 08a86da22498172adb6cefaa99fdfaf7 |           2 |              1 | {c775dea8bfab02a285d4d3b9f247808d,3c0f91a7a3493bb46260f52f2e6ab61a}
+ 0c2915e69ee09c18b9c15b8035bdc5ff |           2 |              1 | {a4b276bd4a9eba543ec90cdf29a67308,7433b1786e1af2042c2c4c76d3e4b750}
+ 0c8e7347f1cdd2aede37371543e3d163 |           2 |              1 | {02355020fd0a40a0d56df9f6ff060413,81c2d284094f3b39baddefb519a30149}
+ 0e249472bec47b0c4b88a8e8bfa8d241 |           2 |              1 | {7b994fc7c7528d2098eebcb19d18ce7e,8b1a9c54d1ba09cc40591511d388d286}
+ 0ec0f24aa34a9b25fb0f7b32034965ce |           2 |              1 | {3c6566c0b8aa1eb2382e08cc0ae4bab4,b2072c2ef2726db9126e404a9e486365}
+ 0efebc2c5add22c5b45867716919dcdd |           2 |              1 | {9b24c8496d87684865617cdb3eff7065,afc5e76e5cc169a08cec884d98173efb}
+ 0ffae99e57188428340c206afb957a1c |           2 |              1 | {8b426ff8aa1c03dc173f1270133b408e,0a0090ae69392fa38ee742006f8c0a90}
+ 105facb42b5b9147996f0b1b6fbf7b80 |           2 |              1 | {714fb133a6730ab81fa1d3c1b2007291,04c3bddd55df58e83123e3b174855489}
+ 10bca0461c36ef14701fa28971d0cdb5 |           2 |              1 | {46984ee8227e1926e055327b55ad576c,fdf7396bbd1e126f45ba0fc3896360a7}
+ 11912dbae5f169782098a20fc51c0b33 |           2 |              1 | {440fd902b617080eeb9463a65ffae07a,4b5893f13b0e06d63d6a27fd04544deb}
+ 11c94569cabc7d493a0aa1c5cd1dbfb4 |           2 |              1 | {097abce97e431993434adabc1aaec4e4,a5a322511ad2f5a5296e865cd5c23abe}
+ 13cc14a5f7a442a1ecce8f32b463e242 |           2 |              1 | {396edbf3fd93df6ebe7bb415f5af60c9,d3feb75cb4e8d372a35e074fc1175bcd}
+ 1439640ba4905dc2f98188cad2a77154 |           2 |              1 | {6066fbcebeaf378770ad9fbe8e30d1f0,824fa8179b9911d58831e0b09eedde13}
+ 15daa9db89623052d7b25d96ed14686d |           2 |              1 | {62eb76321ff33a367a805bc9d0701dda,bf9a3a8d9db6be5e4dfcfe2f071ef405}
+ 161160f7f3602ec0de9cd583b62b3b15 |           2 |              1 | {d898dd2a514f62601dc99b7858023038,155809b08fd56a13a541ff3ea4e9db2a}
+ 167b40b617e650de2c473d70baae2e65 |           2 |              1 | {cb5b7fb63c0add7098c025cb737df02e,b37a7e90838d63c38152d2f8c432a726}
+ 1708c3eec64152cb52fe56bb3abcf257 |           2 |              1 | {5dc05f32211efb743fde17f226adfb6b,451ef728c85c9cb2765159e30f4fa021}
+ 17592266cd3216a98665ebfd6365843a |           2 |              1 | {3ca618a967a369a20ac5f2c4e00e151a,c229c6a2f0ecb33d8e2779ebddec3a1f}
+ 18071cb247f057c348988037fa94a0cd |           2 |              1 | {4c8b9947280829d0a8b7e81cc249b875,27667a063cb59b5d987a5a71c192cce5}
+ 183808dc516fab3df74b087310299cf0 |           2 |              1 | {374a125372cffb30e8e2df55f8448da4,29210b1d48462ce1f12d87ed7ccd6397}
+ 1961cafe1d1cbd4cc701c2f0160467ff |           2 |              1 | {497f97bb280fe07465c3833fdfc04736,2699d27682691fa4f6be5cfde364a833}
+ 1b5dc3da2372e9bb5518cd37cd9a9354 |           2 |              1 | {2af768daf2646f316e9457e1f10b2428,5ddea4bc0239f874cd7d6fd398d6045a}
+ 1c0c84f0e3132c3af0a17f0aa4987879 |           2 |              1 | {60b3fa9424e97cd3b6b95ca799d511c6,24cdfd401a113857553214161447483a}
+ 1ce9388b1a3ad76f5f1a64f208a90fce |           2 |              1 | {0d6cc2219ef268358eac3c49b47abca9,ac7a92560a9e99f0a0ab4988102f491b}
+ 1d5b8cc3cac5888ebfc80a0dcd337f07 |           2 |              1 | {118ec9ddef528c64a545169b898e7699,b3154d5a5a7c0b01993f0768a1fd4b8a}
+ 1ef17c31c6a710e3cee7853fb387dcc3 |           2 |              1 | {94153bbf95f273c5b6c342d2acc6d017,9e8bf3ebc81cc29ee6e934d95370e5bc}
+ 1f5aa5d7c3ee7895e4d223797b5a5f2d |           2 |              1 | {c79bdf061e22288609201ec60deb42fb,17df2cc060680fc1712991499b645cd2}
+ 1f997992c19d44fe5049ec91f13ccd34 |           2 |              1 | {4082016610cd8b53add011fe068c04b3,78ac0881f0e98a1afd25f066d5451d70}
+ 23b4bc2bed27abb066272d560caa7c5b |           2 |              1 | {1c961234d514101345679cb6028102fa,94d97c26cd5ca2a98749be9e672b44d4}
+ 24a60a24e0fd528dc4386386310a90cb |           2 |              1 | {195416246665b8268100ef5fde9722b4,46936461f0c4e3c80b9289ce5fc1682a}
+ 260b8badf10666253ac8a8eda99119f9 |           2 |              1 | {8e350e1e4254bd7c68913b98bde7d3a7,75d5d3d16567a27eefc5752aeb063072}
+ 260ee32afa3b7b9ed9bc283449dfab75 |           2 |              1 | {f8e76bb341db0c60411beac8a83f312a,f83c07d038cf7ce0132a5797f823e4fe}
+ 268d71995d6c0c472faf0f13b442a00e |           2 |              1 | {ba89a3d7d01c8a2a0bbdb514a851e9f1,8f22b4b97d1fd2f187f3106ffb0021c4}
+(43 rows)
+

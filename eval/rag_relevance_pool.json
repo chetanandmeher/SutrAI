@@ -1,0 +1,1220 @@
+[
+  {
+    "chunk_id": 2703,
+    "review_id": "14ab06af2677555bfcf9ff2e64a1b203",
+    "order_id": "1432d48030ced821a4afaabcfc2a8b0f",
+    "review_score": 1,
+    "text": "Sem satisfação sobre atraso na entrega",
+    "similarity": 0.6672497987747192,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3723,
+    "review_id": "1c6e23b615b667e798d91396baefc502",
+    "order_id": "6f56d701fdaa7fc3575ddda3bed5fbbb",
+    "review_score": 1,
+    "text": "O que me incomoda nessa compra é a demora na entrega do produto. Sou cliente lannister a muito tempo e sempre satisfeita com a compra, mas infelizmente, as últimas compras não recebi .",
+    "similarity": 0.6367749571800232,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3638,
+    "review_id": "1bbbb803de6ca4dc1c410c1c9c8c1479",
+    "order_id": "2e4ac9141035afac9390d77c93177a95",
+    "review_score": 1,
+    "text": "Envio e entrega super atrasados. ",
+    "similarity": 0.6301074028015137,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 13,
+    "review_id": "0013e9dd48c5a38d258a9e0bd1917fa7",
+    "order_id": "fb778dbecc94ac70dabbc1bf2d339e0a",
+    "review_score": 3,
+    "text": "Empresa entrega dentro do que promete, no último dia do prazo, demora de mais, não encanta o cliente, pois só faz a obrigação básica.",
+    "similarity": 0.6198612451553345,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1631,
+    "review_id": "0cb2d7fbb08a0101626ab961a0be6557",
+    "order_id": "8b3e71403c430eeafc548cd871850674",
+    "review_score": 2,
+    "text": "muita demora na entrega",
+    "similarity": 0.6188272422202602,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1913,
+    "review_id": "0ec638d4fa47f321fd70dd6dd6e7c568",
+    "order_id": "a1226839947001dfb15c46e812c68325",
+    "review_score": 4,
+    "text": "Bom atendimento ao cliente,mercadorias entregues antes do prazo ",
+    "similarity": 0.6125262975692749,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3296,
+    "review_id": "190b01af91fb754443307e59209136d6",
+    "order_id": "945552359381c20f8e692b034ba74c44",
+    "review_score": 1,
+    "text": "demora na entrega e produto de baixa qualidade",
+    "similarity": 0.6117681264877319,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3181,
+    "review_id": "18215615f60e6771c00faaaa1ade4cea",
+    "order_id": "743277e5089af7df0cbd543c93e5d852",
+    "review_score": 2,
+    "text": "Um demora pra entrega",
+    "similarity": 0.610867440700531,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1667,
+    "review_id": "0cf1119c23bcdd9fa0e04c7ba3888aac",
+    "order_id": "688fb7e7c929bfa4711317fb51d8820c",
+    "review_score": 1,
+    "text": "Passou o prazo de entrega e ate o momento não recebi o produto as lannister deveriam ter mais cuidado quando oferece produtos de outras lojas. Tenho que correr atrás agora comprar paga e não receber ",
+    "similarity": 0.6103881961338647,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1714,
+    "review_id": "0d42f94fcb4ae827e45ced85fc03525a",
+    "order_id": "ad1b24e31eda83c8bf2123f3961f588a",
+    "review_score": 2,
+    "text": "Recomendo a loja, infelizmente a entrega esta demorando mais que a previsão estipulada! ",
+    "similarity": 0.6089933021676693,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 560,
+    "review_id": "045d330f147f09c3bd2426266ec5d414",
+    "order_id": "b210a0936a3dd8fe4428863f8e352693",
+    "review_score": 1,
+    "text": "Nao tem boa avaliação por atraso na entrega",
+    "similarity": 0.6080720787091313,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1078,
+    "review_id": "089ad71795166748f0fb992a2b335418",
+    "order_id": "afbe79b5d924f62c10998a3c046ba7a7",
+    "review_score": 3,
+    "text": "Tá demorando a entrega",
+    "similarity": 0.6075812812101088,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 962,
+    "review_id": "0787f2114bbccf54944e73671a579159",
+    "order_id": "3e9638823ecdbfaab776fd985c88ec3d",
+    "review_score": 1,
+    "text": "Alguma dessas lojas parceiras não tem nenhum tipo de compromisso ou sequer respeito pelo Cliente, simplesmente um atraso na entrega dos produtos que já se arrasta por um mês sem qualquer justificativa",
+    "similarity": 0.6066151857376099,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_02",
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 860,
+    "review_id": "06ca23fe7c7c38193969c38098aca1bd",
+    "order_id": "fc3078fa5d882e59237a658341f57738",
+    "review_score": 2,
+    "text": "A loja me ligou informando que a transportadora está com dificuldades para finalizar a entrega.",
+    "similarity": 0.6038753390312195,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3287,
+    "review_id": "18fd8314a11f9a00cb85e8ef9aa70042",
+    "order_id": "7a363dd1eb003c19a36e4eba73e3105d",
+    "review_score": 4,
+    "text": "O status da entrega é ruim, sempre desatualizado, mostra que teve erro na entrega, mudam o prazo e no fim entregam antes. ",
+    "similarity": 0.60366290807724,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2962,
+    "review_id": "167e396cd8108e54fa20f405f281aa91",
+    "order_id": "8c3651ff7833e7345fd13c7132f9880c",
+    "review_score": 4,
+    "text": "O produto foi entregue, entretanto com atraso devido a problemas com o correio. A loja se demonstrou atenciosa em resolver meu problema.",
+    "similarity": 0.6020081876511473,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1671,
+    "review_id": "0cf3369f069c5f82123fe37c668d39b9",
+    "order_id": "a18cc28d5b932f1f4a35cf7c4e63e571",
+    "review_score": 3,
+    "text": "Prazo de entrega absurdo e demora no retorno do vendedor",
+    "similarity": 0.5949717341355009,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_05",
+      "RAG_06",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 812,
+    "review_id": "066579e74864472d03f1d31ac249629d",
+    "order_id": "1c6fa4d79455e9a037cc62611a4b4f6a",
+    "review_score": 1,
+    "text": "Não sei porque as lojas insistem em mandar os produtos pelo correio! Todos atrasam.",
+    "similarity": 0.5941511988639832,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3856,
+    "review_id": "1d6cfb08256ced9bd5391e6b2e0a6a35",
+    "order_id": "1c95864be748aeb7e70002b2d365646f",
+    "review_score": 1,
+    "text": "Após 20 dias aguardando a entrega, a compra foi cancelada. A loja oferece produtos por um preco baixo, mas não entrega e faz o cliente esperar prazos absurdos . Não recomendo esta loja.",
+    "similarity": 0.5916262865066528,
+    "retrieved_for": [
+      "RAG_01"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1473,
+    "review_id": "0b9740c80aede334780599d37387228c",
+    "order_id": "1fda06c4d014e1f00378d6f6e1d46cd1",
+    "review_score": 2,
+    "text": "Péssimo atendimento, não entregam no prazo, sem qualquer tipo de satisfação ao cliente. Horrível!",
+    "similarity": 0.5911448001861572,
+    "retrieved_for": [
+      "RAG_01",
+      "RAG_06",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2707,
+    "review_id": "14b33ac24083bd93da570659da1630af",
+    "order_id": "d0fd9595949095f91592a79bd26a2126",
+    "review_score": 1,
+    "text": "Pedido não entregue (prazo de entrega não obedecido)",
+    "similarity": 0.6525928171034358,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3673,
+    "review_id": "1c1686a8e031498fb7a0ef51a84acadd",
+    "order_id": "c3483e54e973d333c6365c217f4422b9",
+    "review_score": 1,
+    "text": "Não recebi meu pedido, não retornaram os emails que enviei pedindo informações de entrega. Pela falta de compromisso e pelo desrespeito ao cliente(consumidor) realizei o cancelamento.",
+    "similarity": 0.6306905746459961,
+    "retrieved_for": [
+      "RAG_02",
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2731,
+    "review_id": "14ea6decad5dd6bad11cfb2afd01c478",
+    "order_id": "334e118f51cc0e200822d5f117db5f19",
+    "review_score": 2,
+    "text": "Foram comprados 2 produtos, que seriam entregues pelo mesma loja e fornecedor. Entretanto, somente um dos produtos foi entregue. O outro não foi, e consta no sistema como enviado.\nSem resposta da loj",
+    "similarity": 0.6178587263184409,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4334,
+    "review_id": "21669c0b1d532d754a411e09973d118d",
+    "order_id": "28eaf28c1a7f1e6d917f465578bb1b43",
+    "review_score": 1,
+    "text": "Produto entregue errado, reclamação realizada, solicitado de troca aberta a mais de uma semana e nem sinal da empresa",
+    "similarity": 0.6082849502563477,
+    "retrieved_for": [
+      "RAG_02",
+      "RAG_03",
+      "RAG_04",
+      "RAG_05",
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2220,
+    "review_id": "10d5985d79e320e861162f2b7f4763d2",
+    "order_id": "60d7d8686099e4682199966963c66ae2",
+    "review_score": 1,
+    "text": " enviaram um email falando que não tinham no estoque, eles deveriam confirmar se tinham ou não no estoque no momento da compra e não depois que efetuei o pagamento.Falta de organização no estoque",
+    "similarity": 0.6061403155326843,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 785,
+    "review_id": "0624d0ec20d86b39b8f4936da80afff7",
+    "order_id": "7142b298b22a79a285d2ce792dc533a2",
+    "review_score": 5,
+    "text": "Não dão a menor satisfação para o cliente a entrega estava prevista para 13/03/17 e foi a única comunicação que tive enviei email e não fui atendida no dia 10/03 me avisaram q. O pedido seria cancelad",
+    "similarity": 0.6026264429092407,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2361,
+    "review_id": "11dd2574e3c196f01017e4df55614b90",
+    "order_id": "768e55f3434ea3cf830ceceaf074257c",
+    "review_score": 1,
+    "text": "O produto ainda não foi entregue, por responsabilidade dos correios. Porém a loja poderia tê-lo enviado antes de modo a se antecipar a eventuais imprevistos. Continuo a esperar.",
+    "similarity": 0.6021962345300985,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4512,
+    "review_id": "22bdc97e28061b06997f11e29f0a4594",
+    "order_id": "24da4d9782584b90078fc30af8df32ad",
+    "review_score": 1,
+    "text": "produto entregue pelos correios que não atualizou status de rastreamento e nem entregou produto ",
+    "similarity": 0.5982623100280762,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1940,
+    "review_id": "0ef277767fbc0fc4d02abbbd8c1f5e3a",
+    "order_id": "227e226c302f202f8fe0ac838846adf3",
+    "review_score": 4,
+    "text": "Foi feito tres pedidos dois chrgaram certo so um que não entregaram dentro do prazo e recomendo",
+    "similarity": 0.5965149402618408,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4527,
+    "review_id": "22d92f3f53fb9751a8adbddc152762bc",
+    "order_id": "3a61b3fbedc733000b0529431170ddf8",
+    "review_score": 1,
+    "text": "O produto ainda não foi entregue. Se eu soubesse que essa loja usava os correios nem teria comprado, pois os correios estão dificultando os esclarecimentos.",
+    "similarity": 0.594045299114147,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3988,
+    "review_id": "1e733f7b69d1fe917006989f0038e685",
+    "order_id": "b9e06b464a393125fae96912f6b4016a",
+    "review_score": 1,
+    "text": "\n\nHouve um impedimento relatado em outro e-mail justificando o atraso da entrega do produto .\nNesse momento ainda não recebi a compra.\nAguardo informações \nPatrícia ",
+    "similarity": 0.590019166469574,
+    "retrieved_for": [
+      "RAG_02",
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 190,
+    "review_id": "014bb9d880369a341aec44c060de24d5",
+    "order_id": "f3d641d9bf49ba992b999d270bef052b",
+    "review_score": 1,
+    "text": "Meu produto não foi entregue ainda. E o vendedor não me dar nenhuma satisfação eu já mandamei vários email msg de reclamação é até agora nada foi feito ",
+    "similarity": 0.5861841440200806,
+    "retrieved_for": [
+      "RAG_02",
+      "RAG_04",
+      "RAG_05",
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 40,
+    "review_id": "0044d27b5dd50693ba83f184593e54f7",
+    "order_id": "24fe7dc3b99f55e3d45f8d3d4c394811",
+    "review_score": 3,
+    "text": "Não posso culpar a loja, porém é deprimente não receber até o momento a encomenda por culpa dos CORREIOS. ",
+    "similarity": 0.5837611307955473,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1718,
+    "review_id": "0d592da0b11f266efd97a16956ff6417",
+    "order_id": "e58b8168894c93cf61d36c90775acd85",
+    "review_score": 1,
+    "text": "compra efetuada,debito autorizado ,pedido cancelado sem explicações.Extrema falta de respeito e consideração com os clientes.",
+    "similarity": 0.5812902450561523,
+    "retrieved_for": [
+      "RAG_02",
+      "RAG_05",
+      "RAG_06",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2522,
+    "review_id": "134b1fc7ace58cee0fb0b883c1422860",
+    "order_id": "6f45fec2b3df1efa2877044cda7a6143",
+    "review_score": 1,
+    "text": "Os produtivos não foram entregues até o presente momento. A expectativa de recebimento foi frustrada. O valor foi debitado do cartão. Não recomendo a compra com esse fornecedor. CUIDADO!",
+    "similarity": 0.5788299786347149,
+    "retrieved_for": [
+      "RAG_02",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2980,
+    "review_id": "16a1a92194df29f6b8fcf795203cf321",
+    "order_id": "a95233889b00b4d7f6e1469e15bbeb1d",
+    "review_score": 1,
+    "text": "Recebi meu pedido incompleto, embora a nota contasse os 2 produtos conforme a compra e pagamento, dentro da caixa só havia 1 dos produtos comprados. Vale salientar que a embalagem não estava violada.",
+    "similarity": 0.5787591338157654,
+    "retrieved_for": [
+      "RAG_02",
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1438,
+    "review_id": "0b5d60a15db1aefb367627451ee685d8",
+    "order_id": "3b090f7fe6e2cf01b468a154dc9c546a",
+    "review_score": 1,
+    "text": "Até agora nenhum retorno da loja. Enviei e mail mas não responderam.",
+    "similarity": 0.5781316929498822,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1033,
+    "review_id": "082eedea442819d8c84ee96c79b0df12",
+    "order_id": "859ebef8753883ec6f703f60ebba766c",
+    "review_score": 5,
+    "text": "Não chegou no prazo porém a culpa não foi do vendedor,sim dos correios. Então tudo certo, recomendo!",
+    "similarity": 0.5733396752679165,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2129,
+    "review_id": "103670763dad1a1f58fa53c721e34ee1",
+    "order_id": "097941e2db84b005d04de9e867674226",
+    "review_score": 3,
+    "text": "A minha mercadoria não foi entregue. No correio o status está como foi entregue. Foi entregue somente um informativo falando que em breve o produto seria entregue",
+    "similarity": 0.5732151611575591,
+    "retrieved_for": [
+      "RAG_02"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 931,
+    "review_id": "074c39cb5e90578eaeb560e6f632ae1e",
+    "order_id": "2edf506c823b1a3bc6d134864bc4c10c",
+    "review_score": 1,
+    "text": "Produto de péssima qualidade e acabamento. ",
+    "similarity": 0.6198703050613403,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2020,
+    "review_id": "0f8d635460c4b82123f33aa580b59c0f",
+    "order_id": "8e609b18311a0558de0c7508a9331031",
+    "review_score": 1,
+    "text": "Produto com avarias e péssima qualidade ",
+    "similarity": 0.6120458841323853,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1243,
+    "review_id": "09e1f7e3288ae0f68dda1d8f69f37bb2",
+    "order_id": "24c78c3d4dc744978c9e4e077d3caf8e",
+    "review_score": 1,
+    "text": "Antes de recomendar a loja preciso ver se a loja irá trocar o produto que veio com defeito. Para mim minha compra não foi finalizada ainda.",
+    "similarity": 0.608768880367279,
+    "retrieved_for": [
+      "RAG_03",
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2164,
+    "review_id": "1060d56dcc60ee8aac9cc1e5880c2bf2",
+    "order_id": "c107e4232a2d4729ae3da1aede9eb1e2",
+    "review_score": 1,
+    "text": "produto de má qualidade",
+    "similarity": 0.599020457209377,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2576,
+    "review_id": "13ad6bda4fff6a2c7a90bd1b90a40e65",
+    "order_id": "634a0c518ed370679d33e5e25ab3725b",
+    "review_score": 5,
+    "text": "O produto veio co defeito ",
+    "similarity": 0.594208836555481,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4568,
+    "review_id": "2337fd6b94a35c4487548c80ee945bfa",
+    "order_id": "3a53c89c1526bec25191f47b5ab57df6",
+    "review_score": 2,
+    "text": "Meu produto está com defeito",
+    "similarity": 0.5939050074759141,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3441,
+    "review_id": "1a29f7440957452b30193da187371897",
+    "order_id": "de001e88a16cecc089b911816d0cc818",
+    "review_score": 3,
+    "text": "Produto com acabamento ruim, case do equipamento desalinhado e com brechas nas laterais.",
+    "similarity": 0.5876242518424988,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1518,
+    "review_id": "0bef885e66bfc65c1d838be2d82a39eb",
+    "order_id": "4662119a5b84b9a8bf3b4c50e8c868dd",
+    "review_score": 3,
+    "text": "preciso de ajuda para devolucao do pedido,\nos produtos nao tem a qualidade esperada.\n\nat\n\n",
+    "similarity": 0.5830700993537903,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3288,
+    "review_id": "18fe9f34aace3c9cfcd34712cead1208",
+    "order_id": "73cb4ac4aba9d15a0db382e16fc9c784",
+    "review_score": 1,
+    "text": "Produto que sinais de uso , manchado , marcado e quebrado ",
+    "similarity": 0.5756357655308117,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4237,
+    "review_id": "209c73b9a7bfea85bfafa7fa8616351a",
+    "order_id": "cb4591b9a09b86b55be10a9ea234de8c",
+    "review_score": 1,
+    "text": "Como posso avaliar algo que não recebi.\nJá paguei o produto e no status diz que o produto não chegou ainda na unidade da minha cidade.\nentrega para 21/12/2017.\ncadê o produto?fico no prejuízo?",
+    "similarity": 0.5756229162216187,
+    "retrieved_for": [
+      "RAG_03",
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 133,
+    "review_id": "00ebb33f82d352f07f0b19e8c6970036",
+    "order_id": "3f72f5304e4f8c8cd61260e86c8fa917",
+    "review_score": 3,
+    "text": "porém o produto deu defeito e esta sendo encaminhado para a autorizada",
+    "similarity": 0.5706391334533691,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2600,
+    "review_id": "13dcde46c1a250aaed407dd6d5a53b77",
+    "order_id": "cdbd981121b82988cdb4bc8229598984",
+    "review_score": 3,
+    "text": "Produto veio quebrado",
+    "similarity": 0.5686383247375488,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 470,
+    "review_id": "03a673dc9858b1fe77fc26a3900c129a",
+    "order_id": "85255dfbdf9d963a4517ef2587876dd4",
+    "review_score": 2,
+    "text": "Produto veio quebrado ",
+    "similarity": 0.5686383247375488,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4218,
+    "review_id": "206fcd0c7e9d3248ff891f31205ae6ee",
+    "order_id": "d6cd9d63e25452e0278cb6eeed08de6b",
+    "review_score": 3,
+    "text": "Um os produtos veio quebrado, estou tentando trocar ou devolver.",
+    "similarity": 0.5634934809947169,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 937,
+    "review_id": "0755e006fada52135e11be21fbd37889",
+    "order_id": "c78fd57b912d62acf68d11da7a7c500b",
+    "review_score": 5,
+    "text": "Mais uma vez a empresa falida \"correios\" falhou na entrega, prejudicando assim a loja e o cliente. Precisamos escolher outras formas de envio urgente.",
+    "similarity": 0.5633676983933279,
+    "retrieved_for": [
+      "RAG_03",
+      "RAG_05",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3953,
+    "review_id": "1e39301e37ad6658793dfe56c6e0c077",
+    "order_id": "5820dd9ea37cacf01bfff5a4b9ccfb13",
+    "review_score": 1,
+    "text": "produto atrasado sem resposta da loja ",
+    "similarity": 0.5628527402877808,
+    "retrieved_for": [
+      "RAG_03",
+      "RAG_05",
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3742,
+    "review_id": "1c8fd7ea70ecd153db3628dc967aec5a",
+    "order_id": "3b9b43f842d56d4e464cf761d7c526e2",
+    "review_score": 4,
+    "text": "Produto entregue sem defeito e dentro do prazo, mas o produto não é bom; a base é de plástico e muito ruim, as argolas são ruins também.",
+    "similarity": 0.5618427991867065,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2308,
+    "review_id": "117d4f0a2b811b6608554f76bf6c87ce",
+    "order_id": "3e851df052741b8294183d372f0bf1a2",
+    "review_score": 2,
+    "text": "A loja entregou a quantidade errada do produto.",
+    "similarity": 0.5560414459680659,
+    "retrieved_for": [
+      "RAG_03"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2073,
+    "review_id": "0fdb93c96bcacb37101b6c9c0d887a51",
+    "order_id": "7ae297a5353312db3c47746c3b1a8527",
+    "review_score": 4,
+    "text": " O meu produto não veio conforme a compra,faltou um item. (planilha de avaliação). ",
+    "similarity": 0.5474123358726501,
+    "retrieved_for": [
+      "RAG_03",
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4065,
+    "review_id": "1f25f1a62403bca90ae5ab2e69583791",
+    "order_id": "eab958e760e3a29d059399d02b913fb4",
+    "review_score": 2,
+    "text": "produto entregue fora do praso, devido a falhas do correio, entregue em 18/03\nobrigado",
+    "similarity": 0.5170288681983948,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4300,
+    "review_id": "211b5045188b0254c3c7cbab1d7839a6",
+    "order_id": "18ca340d8c5cef7fba3c9c18efce43e9",
+    "review_score": 5,
+    "text": "o produto veio com defeito. ja mandei email reclamando",
+    "similarity": 0.5073064868036807,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4883,
+    "review_id": "25aa5c6f0dc303863905a0ade6791d6b",
+    "order_id": "ba69999c786ff19bdbff341ea39a3b54",
+    "review_score": 1,
+    "text": "Comprei 2 cartuchos e me entregaram 1, até agora não entraram em contato após reclamação para resolver minha situação e o pior estou precisando da mercadoria e minha impressora só funciona com os 2",
+    "similarity": 0.5071019824086447,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2203,
+    "review_id": "10b73c782535c2ca6f5df1188f3785a6",
+    "order_id": "d8734ba226623cf1c86b3cce8cbffa78",
+    "review_score": 1,
+    "text": "Pessimo atendimento, sem canal de reclamação \nfornecedor ",
+    "similarity": 0.5039289147832668,
+    "retrieved_for": [
+      "RAG_04",
+      "RAG_06",
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3812,
+    "review_id": "1d31a370d6a5a747a52c3f3f58adab85",
+    "order_id": "fa98b1c89208380c565ec7c07a8f3e7a",
+    "review_score": 1,
+    "text": "Eu fiz a compra de 2 cobertores a loja me manda só um , fiz uma reclamação é até agora não fui atendida se caso , não for atendida tomarei providências ",
+    "similarity": 0.5018210411071777,
+    "retrieved_for": [
+      "RAG_04",
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1031,
+    "review_id": "082e7b174bb2d222022d8a403da0f399",
+    "order_id": "01d90c5856f7551e108f2a0864ff6e54",
+    "review_score": 1,
+    "text": "Meu produto chegou incompleto,faltou um produto, o whaite. Estou muito chateada.",
+    "similarity": 0.4980536997318268,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1389,
+    "review_id": "0afdaef42f4cef6492069412f42443d3",
+    "order_id": "cb52e15d9560e5dadaf5732671a919d1",
+    "review_score": 1,
+    "text": "Recebi o produto incompleto, faltou 01 item!",
+    "similarity": 0.49031776189804077,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 511,
+    "review_id": "0402e811f8502142e207b1df7e0c54f8",
+    "order_id": "2edcf6adbf3719366560d6863cb28799",
+    "review_score": 1,
+    "text": "Ficou faltando um kit do produto, os pendente menores vieram certo os maiores ficaram faltando.",
+    "similarity": 0.48964107036590576,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1451,
+    "review_id": "0b6f2f6cac537d5db8e3eb69bc6f976f",
+    "order_id": "f25e32d51127cbef9f269ecae2c83573",
+    "review_score": 1,
+    "text": "Meu produtos veio errado ",
+    "similarity": 0.4866093977224144,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 309,
+    "review_id": "0254bd905dc677a6078990aad3331a36",
+    "order_id": "5bf226cf882c5bf4247f89a97c86f273",
+    "review_score": 1,
+    "text": "O pedido consta de 2 produtos e até agora recebi apenas 1 produto, e o que me preocupa é que o status aparece como entregue.\nSolicito providências\n\n",
+    "similarity": 0.4830101430416107,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 308,
+    "review_id": "0254bd905dc677a6078990aad3331a36",
+    "order_id": "331b367bdd766f3d1cf518777317b5d9",
+    "review_score": 1,
+    "text": "O pedido consta de 2 produtos e até agora recebi apenas 1 produto, e o que me preocupa é que o status aparece como entregue.\nSolicito providências\n\n",
+    "similarity": 0.4830101430416107,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3116,
+    "review_id": "179eb58d89cacb452762401af33c7a42",
+    "order_id": "c549f0d88f33bfe43351b893f1fb55ac",
+    "review_score": 1,
+    "text": "Depois de mais de 30 dias da compra efetuada recebo um e-mail informando que o produto que comprei não estava mais disponível. Simplesmente um descaso com o consumidor e um atendimento lamentável.",
+    "similarity": 0.48255690932273865,
+    "retrieved_for": [
+      "RAG_04",
+      "RAG_05",
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3447,
+    "review_id": "1a3fe09901e661f0bc1c4ce4c00e0d13",
+    "order_id": "bcd58566a69cec15b9dbecaf661df388",
+    "review_score": 1,
+    "text": "Já fiz compras anteriores. Recebi faltando 1. Nota Fiscal consta a quantidade certa comprada desse produto: 6, mas recebi 5. Falta receber tbm outros produtos para piscina, baldes de cloro. ",
+    "similarity": 0.48144093266481647,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 398,
+    "review_id": "030883ae6b53796dcd2a4c323da8ae1d",
+    "order_id": "58c72979aacbc053822e7cc69c316ca4",
+    "review_score": 2,
+    "text": "Meu pedido chegou faltando um produto. ",
+    "similarity": 0.47621545053812653,
+    "retrieved_for": [
+      "RAG_04"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 147,
+    "review_id": "010b2ed38d56504791d0b0c6a6b29cd1",
+    "order_id": "337a9f67f1a66c4e9a9734911c1bf2ee",
+    "review_score": 1,
+    "text": "Um dos três produtos faturados ( etapa 2) foi enviada errada ( outra composição) do que foi pedido e faturado na nota fiscal. Já solicitei o cancelamento do pedido, só me causou transtorno a compra.",
+    "similarity": 0.4755893066174214,
+    "retrieved_for": [
+      "RAG_04",
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3570,
+    "review_id": "1b33a8c4a9148ff6ce18c0a2a15d815a",
+    "order_id": "135fc78debb3120eb1b780ff815ada9c",
+    "review_score": 2,
+    "text": "Produto devolvido devido cancelamento compra ",
+    "similarity": 0.7045125189133012,
+    "retrieved_for": [
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2566,
+    "review_id": "1396568c5b4a474e5e473d48d534d7e7",
+    "order_id": "aa6f9a7c586c01fe6c9021341dfe1de7",
+    "review_score": 1,
+    "text": "Produto extraviado na entrega, furtado do carro dos correios, cancelamento solicitado por email e pelo site lannister.com.\nNão posso avaliar a loja e nem recomenda-la, devido a este motivo.",
+    "similarity": 0.5994631409325099,
+    "retrieved_for": [
+      "RAG_05",
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1137,
+    "review_id": "08ec98a01d702afc8fb1ed605a2f7a6a",
+    "order_id": "659931410d19a914a52ca0a46bc7992a",
+    "review_score": 1,
+    "text": "Antes do produto ser entregue eu pedi o cancelamento da compra. Estou aguardando o reembolso. Obrigada.",
+    "similarity": 0.5909580940579242,
+    "retrieved_for": [
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1660,
+    "review_id": "0ce7d6b5abde2f5802a1793b37690ce6",
+    "order_id": "b77da58943f12a6562df928e821440c9",
+    "review_score": 5,
+    "text": "Em função da voltagem não ser a da minha região solicitei o cancelamento da compra... Estou aguardando o estorno do valor pago no cartão.\nGrato",
+    "similarity": 0.5629858114114897,
+    "retrieved_for": [
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1563,
+    "review_id": "0c432814d8b880be75bb63854310b30c",
+    "order_id": "c7a9de0ea61229818bdab21f76b0e804",
+    "review_score": 1,
+    "text": "Já enviei 3 e-mails para a empresa solicitando informações referente a entrega do produto. E até o momento não tive retorno para saber se vão estornar o valor ou entregar o produto. ",
+    "similarity": 0.5626422502185265,
+    "retrieved_for": [
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2385,
+    "review_id": "1227d6b51e8b2fd6b01cd3d994d0cef6",
+    "order_id": "0f0da37d4b99bfd602829ae5992b2d57",
+    "review_score": 2,
+    "text": "pedi o cancelamento da compra devido ao prazo de entrega, assim que foi feita. recebi o produto e está aqui ´rpno para devolvr. Como devolver?",
+    "similarity": 0.5506550401839647,
+    "retrieved_for": [
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1797,
+    "review_id": "0df0db0cddd69ecc5810ba0620d837cf",
+    "order_id": "686809116cd16f0b805804aefb0102a4",
+    "review_score": 1,
+    "text": "O produto não foi entregue, tento falar com a empresa lannister e targaryene e só da instabilidade de página! Nem mesmo consigo cancelar minha compra! Total desrespeito com o cliente! ",
+    "similarity": 0.550522744655613,
+    "retrieved_for": [
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2023,
+    "review_id": "0f9065b3157a98e72310253b20f64fa8",
+    "order_id": "981ce71403e17f9540c416f431a7c6d2",
+    "review_score": 1,
+    "text": "O parceiro lannister (targaryen) cancelou a compra e até a presente data a lannister não me informou como devo proceder para a restituição do valor pago.",
+    "similarity": 0.545938838655249,
+    "retrieved_for": [
+      "RAG_05"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 700,
+    "review_id": "0591cd11bdcf947c1514404182607906",
+    "order_id": "5e0de5e6b42042ea6e00e3d07d4aef84",
+    "review_score": 1,
+    "text": "Empresa não da nenhuma satisfação. Estava contando com a compra, muita insatisfação.",
+    "similarity": 0.5891541242599487,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4935,
+    "review_id": "261aa17ae81ffe326107e851d18116e1",
+    "order_id": "6bf14ce96e0c6026fe21f80a498bb446",
+    "review_score": 1,
+    "text": "Venho aqui externar minha insatisfação com as lojas lannister esperei meu pedido ser entregue e simplesmente tive vários contratempos com minha entrega mas não recomendo a loja nem o site .",
+    "similarity": 0.5732844046737079,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1077,
+    "review_id": "0897cac972d6802fd16947dc6fe89dd5",
+    "order_id": "16efc11ccab2e8a17656020f80cd39e3",
+    "review_score": 1,
+    "text": "Quando inciei com as lojas lannister achei otimo, mais devido a falta de consideração nesta ultima compra que realizei fico muito triste com a falta de atenção para o cliente. Até presente data.",
+    "similarity": 0.5704844850012977,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1386,
+    "review_id": "0afacfbf7227b075c599d63c9c0c2c0a",
+    "order_id": "5bf333c26f367c6992c8c4eff042bb4b",
+    "review_score": 5,
+    "text": "Empresa comprometida com o atendimento ao cliente e idônea nos produtos que vendem ",
+    "similarity": 0.5470517873764038,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3096,
+    "review_id": "1780a6aba143bd0a28c71e3ea6bf72bc",
+    "order_id": "6120d49a9bec789c91d34b553c47573a",
+    "review_score": 1,
+    "text": "O produto não chegou, entendo como uma falta de respeito com o consumidor.",
+    "similarity": 0.5411074161529541,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 468,
+    "review_id": "039ef96530dd7e9ce0910d86a129103f",
+    "order_id": "01115c06246220def210911556bdc0e5",
+    "review_score": 1,
+    "text": "Recebi apenas 1 unidade e comprei 2. Tento ligar toda hora na lannister.com e não consigo. Já enviei reclamação e solicitação de resposta varias vezes sem retorno. ",
+    "similarity": 0.5368097584488918,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3399,
+    "review_id": "19de8a2ae12fc1763c7eea95c3289d95",
+    "order_id": "b22fb8549ff34d8632d2f6ecbc626af5",
+    "review_score": 1,
+    "text": "Estou aguardando uma resposta das lojas lannister sobre a compra que fiz e não recebi ",
+    "similarity": 0.5344897508621216,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3820,
+    "review_id": "1d3bede39ce70e44f6236cdaa79f0b06",
+    "order_id": "184470638d1eed17dd8215b62c63221d",
+    "review_score": 1,
+    "text": "Não recebi o produto. Perdi a confiança de compras nas lannister pois vejo que seus parceiros não são confiáveis. ",
+    "similarity": 0.5327967405319214,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2774,
+    "review_id": "153ef790db4a65fb8acb9f66e7f32299",
+    "order_id": "6b3ee7697a02619a0ace2b3f0aa46bde",
+    "review_score": 1,
+    "text": "comprei paguei o frete, e tive que buscar no correio, como posso esta satisfeito, e pior abri uma reclamação e estou até hoje esperando uma resposta do MarketPlace.",
+    "similarity": 0.5302793979644775,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2400,
+    "review_id": "12416af18a71403380ecd6e6ca53332c",
+    "order_id": "83a9c18344682fcbc57696019ff1ff2a",
+    "review_score": 1,
+    "text": "Não posso dizer que não recomendo a loja, pois acredito que o problema na entrega foi com a transportadora (correios). Não deixaria de comprar com a loja por conta deste problema na entrega.",
+    "similarity": 0.5909411907196045,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 1313,
+    "review_id": "0a6843048d2229baf1201b4783d38df3",
+    "order_id": "e4332fcdfe53c13a7ac6feff6e31b6b2",
+    "review_score": 1,
+    "text": "O serviço de entrega é feita através dos correios e este apesar de ter sido pega taxa entrega , não entrega na residência.Qdo puder ir fazer a retirada na ag. central o produto já havia sido devolvido",
+    "similarity": 0.5668515046657966,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2817,
+    "review_id": "1595809104a04f6611904c1549cfede0",
+    "order_id": "0a2de98201596f294c0d11b01a0100a7",
+    "review_score": 5,
+    "text": "Só uma sugestão, saiam por favor da logística doa correios, pois o serviço que eles prestam é um lixo. Quanto a loja nota 10 o produto e o que eu esperava",
+    "similarity": 0.5498219460142828,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3470,
+    "review_id": "1a5d442ce5c6a49be70a17ba598c1c39",
+    "order_id": "d7b9a152c1afa4cc6369201a7b04dc68",
+    "review_score": 3,
+    "text": "A respeito da entrega saiu tudo conforme protocolo mais infelizmemte o produto veio com avaria ",
+    "similarity": 0.5421248351261128,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 4855,
+    "review_id": "256e445ddba830565ad576854f406761",
+    "order_id": "dd6ee4d96f0f3cf1432c3b82818e0387",
+    "review_score": 1,
+    "text": "sem comentarios, muito confusa a informação sobre entrega",
+    "similarity": 0.5387239456176758,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 2076,
+    "review_id": "0fde911606b8b6e98044e4a07ab9fd4a",
+    "order_id": "141c7645c99eed7a80fa7ec9d6c40ad0",
+    "review_score": 3,
+    "text": "Demora para entrega e também os fretes são muito alto poderia avaliar o cliente pela quantidade de compras",
+    "similarity": 0.5230494141578674,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 433,
+    "review_id": "034fff9d15616ad687256f58a057f4f4",
+    "order_id": "dcec2b3be8c3d53056fe63381b2a6cfe",
+    "review_score": 5,
+    "text": "Eficiente do pedido a entrega",
+    "similarity": 0.5105446577072144,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  },
+  {
+    "chunk_id": 3307,
+    "review_id": "19238036379b1539c2f70ce6b3c196a0",
+    "order_id": "8a5c6f8c338d3e4804bd969ba46d5d0c",
+    "review_score": 1,
+    "text": "A entrega de produtos de parceiros deveria ser baratheon . Correios é complicado, detona um nome bem construído.",
+    "similarity": 0.5055299997329712,
+    "retrieved_for": [
+      "RAG_07"
+    ],
+    "relevance": {}
+  }
+]

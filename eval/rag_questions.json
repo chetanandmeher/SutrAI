@@ -1,0 +1,101 @@
+
+[
+  {
+    "id": "RAG_01",
+    "question": "What complaints do customers have about late deliveries?",
+    "topic": "delivery_delays",
+    "relevant_reviews": [
+      ["00130cbe1f9d422698c812ed8ded1919", "dfcdfc43867d1c1381bfaf62d6b9c195"],
+      ["0013e9dd48c5a38d258a9e0bd1917fa7", "fb778dbecc94ac70dabbc1bf2d339e0a"],
+      ["001a4411893b94d3f37d248e3586c63d", "2e931584519b7ebc7b1a445a4f7cd8f1"],
+      ["00343e1d7afe6b95442fc008abe9763f", "b55e03266fc482bd2d25a8116a8be42d"],
+      ["005a61bc59a417a49b978da5c594962a", "8d04cc6c75bba21874268deda821055d"],
+      ["009cfd7eae00f368bfeddd43d43dfce0", "117c08edcd4cf5c43118fefa4e0dab79"],
+      ["00b4ff93b872060dc0915bbaac9466e7", "e86c9bfc5e5cce878c7d0c2419927cd7"],
+      ["0159077dd9d4cb22186f4a0c65ac61da", "162b2345ef3cc0551c0a32058840a2ec"],
+      ["017c2b5a9152db1baac14d2c33b934e8", "116499c6f5aa0822fcfa4f8aa8b194b4"]
+    ]
+  },
+  {
+    "id": "RAG_02",
+    "question": "Which customers report that their orders were never delivered?",
+    "topic": "non_delivery",
+    "relevant_reviews": [
+      ["005eba8f7c09057f6ba364800d5af85e", "5850f6bb95a78cd0fd9641e0453a740b"],
+      ["00800678dcf28b0ea0caef2147b6945d", "000aed2e25dbad2f9ddb70584c5a2ded"],
+      ["0094dde1b39ed6847a41b15204fd3cdd", "9dc439a9d732ca991174a53f114c3cde"],
+      ["00abed2e8c66d956327a71d094f2fb86", "09e3a74fe474342885a70d1b2452c1e2"],
+      ["00d02b97d681dfd7773b124e26b6d399", "26343e0890fb597a7d91a607455a44fa"],
+      ["014bb9d880369a341aec44c060de24d5", "f3d641d9bf49ba992b999d270bef052b"],
+      ["0159077dd9d4cb22186f4a0c65ac61da", "162b2345ef3cc0551c0a32058840a2ec"]
+    ]
+  },
+  {
+    "id": "RAG_03",
+    "question": "What problems do customers report about damaged or defective products?",
+    "topic": "damaged_defective_products",
+    "relevant_reviews": [
+      ["005ee02b2a92d329cd650b1bba202b26", "ff73e2e57b5c7d3a1aa7c3ccaacafaa6"],
+      ["00ebb33f82d352f07f0b19e8c6970036", "3f72f5304e4f8c8cd61260e86c8fa917"],
+      ["00fe7ad9bd275095529b06d8d0bc3406", "e32209bcb9c95a291a1a0e971df14bdb"],
+      ["011eb5ead2f608ff66b5d6840a81b18b", "232277bc3b7e6ff57e09e19b7ce21bd3"],
+      ["01217c69b27054a1cf6c82c41e7703af", "d3a3e3dd365abc6013aa6321b0c12c79"],
+      ["01599963b3308e80154e13bf8639aaaf", "a9cabf6172d0b9bf7909cd1235499fa0"],
+      ["01eda5719e88f5524c7904bc70d08639", "2db55bc45408ca33aa8ff88bbe7fc720"]
+    ]
+  },
+  {
+    "id": "RAG_04",
+    "question": "What complaints involve missing or incorrect items?",
+    "topic": "missing_incorrect_items",
+    "relevant_reviews": [
+      ["00125f12c201cf0160f4a1457b466512", "659a4b8e5c9540667f4d4d5607bc8f79"],
+      ["00343e1d7afe6b95442fc008abe9763f", "b55e03266fc482bd2d25a8116a8be42d"],
+      ["00d140ebce1554dcf37eb0536a00efc3", "9f711f8df6632759b268fe6b611ed87f"],
+      ["012902a4690846e0d3e1cb3a950a1bd0", "cc9760bf7b5d5b74c4d1eb1ab6405b50"],
+      ["016f9e36942a6c358e497569647af6ba", "eb7aac057d7c17adb860b770451ae250"],
+      ["01719ac43943892aee0c317c421fc7aa", "f64fc900013bfa7716897f6208c5c126"],
+      ["01aa47214828951de90e5002bd5c66a0", "c639d319e7a759b47c407201b57d5522"]
+    ]
+  },
+  {
+    "id": "RAG_05",
+    "question": "What issues do customers report regarding refunds and cancellations?",
+    "topic": "refunds_cancellations",
+    "relevant_reviews": [
+      ["006aeabb2a1ff6d8074ecb4b56afd4d4", "05095322e4f3619255e9450335966c33"],
+      ["00d02b97d681dfd7773b124e26b6d399", "26343e0890fb597a7d91a607455a44fa"],
+      ["010b2ed38d56504791d0b0c6a6b29cd1", "337a9f67f1a66c4e9a9734911c1bf2ee"],
+      ["010bc3bfbe90e2f3110c3742a60ca793", "2bc76dc101f9fa63d195e341cd11a649"],
+      ["01719ac43943892aee0c317c421fc7aa", "f64fc900013bfa7716897f6208c5c126"],
+      ["017f0e1ea6386de662cbeba299c59ad1", "02355020fd0a40a0d56df9f6ff060413"],
+      ["01bfd0bfc47e36c6a6203969ca9c3e92", "6d97e3d5d9043bb4fa4f8fd0b4d9f230"]
+    ]
+  },
+  {
+    "id": "RAG_06",
+    "question": "What complaints mention poor seller communication or customer support?",
+    "topic": "seller_communication",
+    "relevant_reviews": [
+      ["00125f12c201cf0160f4a1457b466512", "659a4b8e5c9540667f4d4d5607bc8f79"],
+      ["00b3710466bc0bb874fe10a84018664d", "168777f697d19208fbd441b4029e441a"],
+      ["010bc3bfbe90e2f3110c3742a60ca793", "2bc76dc101f9fa63d195e341cd11a649"],
+      ["012902a4690846e0d3e1cb3a950a1bd0", "cc9760bf7b5d5b74c4d1eb1ab6405b50"],
+      ["014bb9d880369a341aec44c060de24d5", "f3d641d9bf49ba992b999d270bef052b"],
+      ["017c2b5a9152db1baac14d2c33b934e8", "116499c6f5aa0822fcfa4f8aa8b194b4"],
+      ["01822b206cbbf85560305930977ca8f7", "85a00341850d3ac099340d190e2ec046"]
+    ]
+  },
+  {
+    "id": "RAG_07",
+    "question": "What problems do customers experience with delivery services and carriers?",
+    "topic": "delivery_services_carriers",
+    "relevant_reviews": [
+      ["00b49439147c80e6916759355791a8cf", "03dbf3a42789c67ed5e2198f08d997dc"],
+      ["00b4ff93b872060dc0915bbaac9466e7", "e86c9bfc5e5cce878c7d0c2419927cd7"],
+      ["0105ea6487b1325651dc5372adb05152", "c9f23db8a1cb725df9bdb3383bd72b38"],
+      ["012d9e3baeda875fa8f5d57ae2a9a2c0", "33576b663693aaf1afd5b5920c37401f"],
+      ["018e39b7dbe872fd3b7b9ea07fe6a9bd", "7520a4f97d875cef28e46e627eaaf336"]
+    ]
+  }
+]
