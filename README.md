@@ -178,6 +178,18 @@ The interactive API documentation is available at:
 
 - http://127.0.0.1:8000/docs
 
+### 8. Run the web frontend
+
+Keep the FastAPI server running in one terminal. In a second PowerShell terminal, run:
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local Vite URL printed in the terminal (normally http://127.0.0.1:5173). The Vite development server proxies `/api/health` and `/api/ask` to the FastAPI server at `http://127.0.0.1:8000`, so the browser UI and API work together without configuring browser CORS for local development.
+
 ## API
 
 ### Health check
@@ -273,7 +285,7 @@ The existing tests cover planner-output parsing and SQL validation, including re
 - The relevance pool is manually judged and not exhaustive.
 - Hybrid retrieval is implemented as a search function but is not yet used by the RAG agent.
 - Grounding validation currently reports whether the answer is supported; the orchestrator still returns the generated answer when validation is false.
-- The API currently exposes a backend interface; a separate frontend is not part of this repository.
+- The React + Vite frontend is available in `frontend/`. It provides a chat workspace, API status, answer rendering, execution evidence, grounding status, and request metrics. It is an initial local-development UI; conversation history is held in browser memory and is not persisted.
 - Kafka, Redis, and distributed task processing are not part of the current implementation.
 
 ## Project structure
