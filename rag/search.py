@@ -22,8 +22,16 @@ QUERY_EXPANSIONS = {
     "late deliveries": "entrega atrasada atraso entrega",
     "refund": "reembolso reembolsar",
     "cancellation": "cancelamento cancelar pedido",
-    "seller communication": "vendedor atendimento comunicacao",
-    "customer support": "atendimento suporte cliente",
+    "seller communication": (
+        "atendimento ruim OR pessimo atendimento OR sem resposta "
+        "OR nao responde OR sem canal de reclamacao "
+        "OR falta de atendimento"
+    ),
+    "customer support": (
+        "atendimento ruim OR pessimo atendimento OR sem resposta "
+        "OR nao responde OR sem canal de reclamacao "
+        "OR falta de atendimento"
+    ),
     "delivery service": "transportadora correios entrega",
 }
 
@@ -150,7 +158,10 @@ def expand_query(query: str) -> str:
 
     for phrase, translation in QUERY_EXPANSIONS.items():
         if phrase in query_lower:
-            expanded_terms.extend(translation.split())
+            if " OR " in translation:
+                expanded_terms.append(f"({translation})")
+            else:
+                expanded_terms.extend(translation.split()) 
 
     if not expanded_terms:
         return query

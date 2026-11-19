@@ -1,0 +1,190 @@
+{
+  "total_questions": 7,
+  "warmup_runs_per_method_per_question": 30,
+  "measured_runs_per_method_per_question": 100,
+  "overall": {
+    "vector": {
+      "runs": 700,
+      "mean_ms": 66.4,
+      "median_ms": 63.1,
+      "p95_ms": 84.28,
+      "p99_ms": 118.46,
+      "std_dev_ms": 19.68,
+      "min_ms": 49.31,
+      "max_ms": 439.28
+    },
+    "hybrid": {
+      "runs": 700,
+      "mean_ms": 81.84,
+      "median_ms": 73.21,
+      "p95_ms": 98.44,
+      "p99_ms": 145.74,
+      "std_dev_ms": 149.43,
+      "min_ms": 54.22,
+      "max_ms": 4006.41
+    }
+  },
+  "results": [
+    {
+      "id": "RAG_01",
+      "vector": {
+        "runs": 100,
+        "mean_ms": 66.73,
+        "median_ms": 64.21,
+        "p95_ms": 82.46,
+        "p99_ms": 130.61,
+        "std_dev_ms": 12.76,
+        "min_ms": 51.97,
+        "max_ms": 140.45
+      },
+      "hybrid": {
+        "runs": 100,
+        "mean_ms": 78.77,
+        "median_ms": 75.85,
+        "p95_ms": 95.73,
+        "p99_ms": 125.59,
+        "std_dev_ms": 12.18,
+        "min_ms": 61.81,
+        "max_ms": 145.54
+      }
+    },
+    {
+      "id": "RAG_02",
+      "vector": {
+        "runs": 100,
+        "mean_ms": 72.52,
+        "median_ms": 64.32,
+        "p95_ms": 89.91,
+        "p99_ms": 250.16,
+        "std_dev_ms": 43.64,
+        "min_ms": 52.58,
+        "max_ms": 439.28
+      },
+      "hybrid": {
+        "runs": 100,
+        "mean_ms": 132.55,
+        "median_ms": 86.49,
+        "p95_ms": 167.47,
+        "p99_ms": 253.0,
+        "std_dev_ms": 392.15,
+        "min_ms": 73.73,
+        "max_ms": 4006.41
+      }
+    },
+    {
+      "id": "RAG_03",
+      "vector": {
+        "runs": 100,
+        "mean_ms": 65.2,
+        "median_ms": 62.41,
+        "p95_ms": 85.82,
+        "p99_ms": 109.58,
+        "std_dev_ms": 11.33,
+        "min_ms": 49.31,
+        "max_ms": 111.55
+      },
+      "hybrid": {
+        "runs": 100,
+        "mean_ms": 69.85,
+        "median_ms": 67.91,
+        "p95_ms": 87.99,
+        "p99_ms": 102.14,
+        "std_dev_ms": 9.43,
+        "min_ms": 56.1,
+        "max_ms": 105.38
+      }
+    },
+    {
+      "id": "RAG_04",
+      "vector": {
+        "runs": 100,
+        "mean_ms": 67.93,
+        "median_ms": 62.64,
+        "p95_ms": 99.76,
+        "p99_ms": 118.99,
+        "std_dev_ms": 15.26,
+        "min_ms": 51.28,
+        "max_ms": 134.41
+      },
+      "hybrid": {
+        "runs": 100,
+        "mean_ms": 69.66,
+        "median_ms": 67.22,
+        "p95_ms": 89.36,
+        "p99_ms": 98.59,
+        "std_dev_ms": 11.03,
+        "min_ms": 54.22,
+        "max_ms": 113.68
+      }
+    },
+    {
+      "id": "RAG_05",
+      "vector": {
+        "runs": 100,
+        "mean_ms": 62.19,
+        "median_ms": 60.11,
+        "p95_ms": 75.15,
+        "p99_ms": 89.95,
+        "std_dev_ms": 8.3,
+        "min_ms": 50.57,
+        "max_ms": 100.74
+      },
+      "hybrid": {
+        "runs": 100,
+        "mean_ms": 69.97,
+        "median_ms": 67.53,
+        "p95_ms": 88.8,
+        "p99_ms": 118.88,
+        "std_dev_ms": 11.39,
+        "min_ms": 58.22,
+        "max_ms": 121.45
+      }
+    },
+    {
+      "id": "RAG_06",
+      "vector": {
+        "runs": 100,
+        "mean_ms": 62.9,
+        "median_ms": 60.8,
+        "p95_ms": 77.22,
+        "p99_ms": 95.59,
+        "std_dev_ms": 8.02,
+        "min_ms": 51.93,
+        "max_ms": 97.34
+      },
+      "hybrid": {
+        "runs": 100,
+        "mean_ms": 71.84,
+        "median_ms": 69.31,
+        "p95_ms": 90.38,
+        "p99_ms": 114.41,
+        "std_dev_ms": 10.85,
+        "min_ms": 56.38,
+        "max_ms": 119.35
+      }
+    },
+    {
+      "id": "RAG_07",
+      "vector": {
+        "runs": 100,
+        "mean_ms": 67.36,
+        "median_ms": 65.44,
+        "p95_ms": 81.69,
+        "p99_ms": 106.79,
+        "std_dev_ms": 9.99,
+        "min_ms": 53.34,
+        "max_ms": 113.99
+      },
+      "hybrid": {
+        "runs": 100,
+        "mean_ms": 80.24,
+        "median_ms": 78.38,
+        "p95_ms": 97.9,
+        "p99_ms": 115.48,
+        "std_dev_ms": 10.7,
+        "min_ms": 62.03,
+        "max_ms": 121.55
+      }
+    }
+  ]
+}

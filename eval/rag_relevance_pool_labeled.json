@@ -1572,5 +1572,33 @@
     "relevance": {
       "RAG_06": 0
     }
+  },
+  {
+    "chunk_id": 3596,
+    "review_id": "1b6cacccdbf65aa1d80b9b1ea0b1207b",
+    "order_id": "da619e31c9daa2026418be6af321971c",
+    "review_score": 1,
+    "text": "ainda não tive resposta sobre a devolução do valor pago, estou esperando respostas sobre o meu pedido, se não tiver nenhum resposta vou colocar uma nota bem grande no reclame aqui.",
+    "similarity": null,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {
+      "RAG_06": 1
+    }
+  },
+  {
+    "chunk_id": 4236,
+    "review_id": "209a90c3fd2fe7502c8b78e67dfdb9fa",
+    "order_id": "809fc33617d44c48deb9b253aa7397ac",
+    "review_score": 1,
+    "text": "Procurei as agências do correio o produto não estava postado, não tive nenhuma resposta sobre o mesmo. Total insatisfação, aguardo resposta! Obs.: Pelo cód de rastreamento já está postado Mas n rece",
+    "similarity": null,
+    "retrieved_for": [
+      "RAG_06"
+    ],
+    "relevance": {
+      "RAG_06": 1
+    }
   }
 ]

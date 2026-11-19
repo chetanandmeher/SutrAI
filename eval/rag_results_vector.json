@@ -1,7 +1,7 @@
 {
   "total_questions": 7,
   "precision_at_5": 0.7143,
-  "pooled_recall_at_5": 0.2445,
+  "pooled_recall_at_5": 0.2389,
   "mrr_at_5": 0.9286,
   "evaluation_note": "Recall is measured against manually labeled relevant reviews in the judged top-20 retrieval pool, not the complete review corpus.",
   "results": [
@@ -264,10 +264,10 @@
       "id": "RAG_06",
       "question": "What complaints mention poor seller communication or customer support?",
       "precision_at_5": 1.0,
-      "pooled_recall_at_5": 0.3333,
+      "pooled_recall_at_5": 0.2941,
       "mrr_at_5": 1.0,
       "relevant_retrieved": 5,
-      "relevant_in_judged_pool": 15,
+      "relevant_in_judged_pool": 17,
       "retrieved": [
         {
           "chunk_id": 2203,
