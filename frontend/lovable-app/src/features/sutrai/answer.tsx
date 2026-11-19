@@ -1,9 +1,27 @@
 import { useState } from "react";
-import { Check, Copy, Download, ArrowDownUp, MessageSquareQuote, CheckCircle2, AlertTriangle } from "lucide-react";
+import { Check, Copy, Download, ArrowDownUp, MessageSquareQuote, CheckCircle2, AlertTriangle, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DemoBadge } from "./workspace";
 import { toCsv, type Analysis, type Row } from "./data";
+
 const text = (v: unknown) => (typeof v === "object" ? JSON.stringify(v) : String(v ?? "—"));
+const label = (value: string) => value.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+const isRevenue = (key: string) => /revenue|sales|amount|price|total/i.test(key);
+const formatValue = (key: string, value: unknown) => {
+  if (typeof value !== "number") return text(value);
+  return isRevenue(key)
+    ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 2 }).format(value)
+    : new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 }).format(value);
+};
+function cleanSummary(markdown: string) {
+  const lines = markdown.split("\n");
+  const prose = lines.filter((line) => {
+    const trimmed = line.trim();
+    return trimmed && !trimmed.startsWith("|") && !/^\|?\s*[-:]+(?:\s*\|\s*[-:]+)+\s*\|?$/.test(trimmed)
+      && !/^\*\*[^*]+\*\*$/.test(trimmed);
+  });
+  return prose.join(" ").replace(/\*\*(.*?)\*\*/g, "$1").replace(/\*(.*?)\*/g, "$1").trim();
+}
 export function Answer({ analysis }: { analysis: Analysis }) {
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState("");
@@ -14,6 +32,14 @@ export function Answer({ analysis }: { analysis: Analysis }) {
     const av = a[sort.key], bv = b[sort.key];
     return (typeof av === "number" && typeof bv === "number" ? av - bv : text(av).localeCompare(text(bv))) * (sort.asc ? 1 : -1);
   });
+  const categoryKey = keys.find((key) => /category|product|name|label/i.test(key)) ?? keys[0];
+  const valueKey = keys.find((key) => typeof analysis.rows[0]?.[key] === "number" && isRevenue(key))
+    ?? keys.find((key) => typeof analysis.rows[0]?.[key] === "number");
+  const chartRows = categoryKey && valueKey
+    ? [...analysis.rows].filter((row) => typeof row[valueKey] === "number")
+        .sort((a, b) => Number(b[valueKey]) - Number(a[valueKey])).slice(0, 10)
+    : [];
+  const maxValue = chartRows.length ? Math.max(...chartRows.map((row) => Number(row[valueKey]))) : 0;
   async function copy() {
     try { await navigator.clipboard.writeText(analysis.summary); setCopied(true); setCopyError(""); setTimeout(() => setCopied(false), 2000); }
     catch { setCopyError("Copy unavailable. Select the summary to copy it manually."); }
@@ -24,6 +50,7 @@ export function Answer({ analysis }: { analysis: Analysis }) {
   }
   const raw: Row = analysis.raw && typeof analysis.raw === "object" ? analysis.raw as Row : {};
   const metrics = analysis.metrics ?? {};
+  const summary = cleanSummary(analysis.summary);
   return (
     <section className="answer-panel">
       <div className="section-heading">
@@ -42,20 +69,36 @@ export function Answer({ analysis }: { analysis: Analysis }) {
       {!analysis.demo && analysis.isGrounded === false && (
         <div className="status-notice"><AlertTriangle size={16} /> The validator flagged unsupported claims. Review the validation details before relying on this answer.</div>
       )}
-      <div className="executive-summary"><span className="eyebrow">EXECUTIVE SUMMARY</span><p>{analysis.summary}</p></div>
+      <div className="executive-summary">
+        <span className="eyebrow">EXECUTIVE SUMMARY</span>
+        <p>{summary || (analysis.rows.length ? "The query returned structured results. Review the ranking and detailed data below." : analysis.summary)}</p>
+      </div>
+      {chartRows.length > 0 && (
+        <section className="answer-chart" aria-label="Results visualization">
+          <div className="answer-chart-heading"><div><BarChart3 size={16} /><h3>Top results</h3></div><span>{label(valueKey!)} · {isRevenue(valueKey!) ? "USD" : "value"}</span></div>
+          <div className="answer-bars">
+            {chartRows.map((row, index) => (
+              <div className="answer-bar-row" key={String(row[categoryKey!])}>
+                <div className="answer-bar-label"><span>{index + 1}. {label(text(row[categoryKey!]))}</span><strong>{formatValue(valueKey!, row[valueKey!])}</strong></div>
+                <div className="answer-bar-track"><div style={{ width: maxValue ? `${Math.max(0, Number(row[valueKey]) / maxValue * 100)}%` : "0%" }} /></div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
       {Object.keys(metrics).length > 0 && (
-        <p className="subtle">Runtime: {text(metrics["latency_ms"])} ms · Tokens: {text(metrics["total_tokens"])}</p>
+        <p className="subtle answer-metrics">Runtime: {text(metrics["latency_ms"])} ms · Tokens: {text(metrics["total_tokens"])}</p>
       )}
       {keys.length > 0 && <>
         <div className="section-heading table-heading">
-          <h3>Results <span className="count-badge">{rows.length} rows</span></h3>
+          <h3>Detailed results <span className="count-badge">{rows.length} rows</span></h3>
           <Button variant="outline" size="sm" onClick={download}><Download />Export CSV</Button>
         </div>
         <div className="table-scroll"><table><thead><tr>{keys.map((k) => (
           <th key={k} aria-sort={sort?.key === k ? (sort.asc ? "ascending" : "descending") : "none"}>
-            <Button variant="ghost" size="sm" onClick={() => setSort({ key: k, asc: sort?.key === k ? !sort.asc : true })}>{k}<ArrowDownUp size={12} /></Button>
+            <Button variant="ghost" size="sm" onClick={() => setSort({ key: k, asc: sort?.key === k ? !sort.asc : true })}>{label(k)}<ArrowDownUp size={12} /></Button>
           </th>
-        ))}</tr></thead><tbody>{rows.map((r, i) => <tr key={i}>{keys.map((k) => <td key={k}>{text(r[k])}</td>)}</tr>)}</tbody></table></div>
+        ))}</tr></thead><tbody>{rows.map((r, i) => <tr key={i}>{keys.map((k) => <td key={k}>{formatValue(k, r[k])}</td>)}</tr>)}</tbody></table></div>
       </>}
       {analysis.evidence.length > 0 && <div className="evidence-section">
         <h3>Retrieved review evidence {analysis.demo && <span className="subtle">· Synthetic examples</span>}</h3>
@@ -74,8 +117,8 @@ export function Answer({ analysis }: { analysis: Analysis }) {
           ["Runtime metrics", analysis.metrics ?? raw["metrics"]],
           ["Retrieved review evidence", analysis.evidence.length ? analysis.evidence : undefined],
           ["Full API response", analysis.raw],
-        ].map(([label, value]) => <details key={String(label)}>
-          <summary>{String(label)}</summary>
+        ].map(([labelText, value]) => <details key={String(labelText)}>
+          <summary>{String(labelText)}</summary>
           <pre>{value === undefined ? "Not supplied by the API." : typeof value === "string" ? value : JSON.stringify(value, null, 2)}</pre>
         </details>)}
       </div>
