@@ -25,52 +25,75 @@ function EvidenceValue({ value }) {
   return <pre className="json-block">{pretty(value)}</pre>;
 }
 
+function SQLResults({ step }) {
+  const data = step?.result ?? {};
+  const columns = Array.isArray(data.columns) ? data.columns : [];
+  const rows = Array.isArray(data.rows) ? data.rows : [];
+  return (
+    <section className="result-section">
+      <div className="result-section-heading">
+        <div><span className="eyebrow">STRUCTURED DATA</span><h4>Query results</h4></div>
+        <span className="result-count">{rows.length} {rows.length === 1 ? "row" : "rows"}</span>
+      </div>
+      {columns.length > 0 && rows.length > 0 ? (
+        <div className="results-table-wrap">
+          <table className="results-table">
+            <thead><tr>{columns.map((column) => <th key={column}>{column.replaceAll("_", " ")}</th>)}</tr></thead>
+            <tbody>{rows.map((row, rowIndex) => <tr key={rowIndex}>{columns.map((column, columnIndex) => {
+              const value = Array.isArray(row) ? row[columnIndex] : row?.[column];
+              return <td key={column}>{value === null || value === undefined ? <span className="muted">—</span> : typeof value === "object" ? pretty(value) : String(value)}</td>;
+            })}</tr>)}</tbody>
+          </table>
+        </div>
+      ) : <p className="empty-result">{data.error || "No tabular rows were returned for this step."}</p>}
+      {data.sql && <details className="sql-details"><summary>View generated SQL <span className="chevron">⌄</span></summary><pre className="json-block">{data.sql}</pre></details>}
+    </section>
+  );
+}
+
+function ReviewEvidence({ step }) {
+  const chunks = step?.result?.chunks ?? [];
+  return (
+    <section className="result-section">
+      <div className="result-section-heading">
+        <div><span className="eyebrow">CUSTOMER VOICE</span><h4>Retrieved review evidence</h4></div>
+        <span className="result-count">{chunks.length} {chunks.length === 1 ? "review" : "reviews"}</span>
+      </div>
+      {chunks.length ? <div className="evidence-list">{chunks.map((chunk, index) => (
+        <article className="evidence-card" key={chunk.chunk_id ?? index}>
+          <div className="evidence-card-top"><strong>{chunk.document_name || `Review ${index + 1}`}</strong>{typeof chunk.similarity === "number" && <span className="similarity">{(chunk.similarity * 100).toFixed(1)}% match</span>}</div>
+          <p>{chunk.text || "No review text was returned."}</p>
+          {chunk.metadata && <details><summary>Review metadata</summary><pre className="json-block">{pretty(chunk.metadata)}</pre></details>}
+        </article>
+      ))}</div> : <p className="empty-result">No review chunks were returned for this step.</p>}
+    </section>
+  );
+}
+
 function ResultDetails({ result }) {
-  const [expanded, setExpanded] = useState(false);
   const steps = result?.steps ?? [];
   const validation = result?.validation ?? {};
   const metrics = result?.metrics ?? {};
+  const sqlSteps = steps.filter((step) => step.agent === "sql");
+  const ragSteps = steps.filter((step) => step.agent === "rag");
   return (
     <section className="details-panel">
-      <div className="details-topline">
-        <div><span className="eyebrow">RUN DETAILS</span><h3>How SutrAI reached this answer</h3></div>
-        <button className="text-button" onClick={() => setExpanded(!expanded)}>{expanded ? "Collapse" : "Expand all"} <span>{expanded ? "−" : "+"}</span></button>
-      </div>
-      <div className="metric-grid">
-        <div className="metric"><span>Latency</span><strong>{metrics.latency_ms != null ? `${metrics.latency_ms} ms` : "—"}</strong></div>
-        <div className="metric"><span>Total tokens</span><strong>{metrics.total_tokens ?? "—"}</strong></div>
-        <div className="metric"><span>Prompt tokens</span><strong>{metrics.prompt_tokens ?? "—"}</strong></div>
-        <div className="metric"><span>Completion tokens</span><strong>{metrics.completion_tokens ?? "—"}</strong></div>
-      </div>
-      <div className="validation-row">
-        <span className={`validation-dot ${result?.is_grounded ? "good" : "warn"}`} />
-        <div><strong>{result?.is_grounded ? "Grounding check passed" : "Grounding check needs review"}</strong><p>{validation.reason || "Validator did not provide a reason."}</p></div>
-      </div>
-      {validation.unsupported_claims?.length > 0 && (
-        <div className="claims"><strong>Unsupported claims flagged</strong><ul>{validation.unsupported_claims.map((claim, i) => <li key={i}>{String(claim)}</li>)}</ul></div>
-      )}
-      <div className="steps-list">
-        {steps.map((step, index) => (
-          <details className="step-card" key={step.step_id ?? index} open={expanded}>
-            <summary>
-              <span className="step-number">{String(index + 1).padStart(2, "0")}</span>
-              <span className="step-agent">{step.agent || "Agent"}</span>
-              <span className="step-task">{step.task || "Execution step"}</span>
-              <span className="chevron">⌄</span>
-            </summary>
-            <div className="step-content">
-              <strong>Evidence returned</strong>
-              <EvidenceValue value={step.result} />
-            </div>
-          </details>
-        ))}
-      </div>
-      {result?.plan && (
-        <details className="raw-plan" open={expanded}>
-          <summary>Execution plan <span className="chevron">⌄</span></summary>
-          <pre className="json-block">{pretty(result.plan)}</pre>
-        </details>
-      )}
+      <div className="details-topline"><div><span className="eyebrow">ANALYSIS RESULTS</span><h3>Evidence behind this answer</h3></div><span className="result-count">{steps.length} execution {steps.length === 1 ? "step" : "steps"}</span></div>
+      {sqlSteps.map((step, index) => <SQLResults step={step} key={step.step_id ?? index} />)}
+      {ragSteps.map((step, index) => <ReviewEvidence step={step} key={step.step_id ?? index} />)}
+      <details className="technical-details">
+        <summary><span><span className="eyebrow">TECHNICAL DETAILS</span><strong>Execution, validation and plan</strong></span><span className="chevron">⌄</span></summary>
+        <div className="metric-grid">
+          <div className="metric"><span>Latency</span><strong>{metrics.latency_ms != null ? `${metrics.latency_ms} ms` : "—"}</strong></div>
+          <div className="metric"><span>Total tokens</span><strong>{metrics.total_tokens ?? "—"}</strong></div>
+          <div className="metric"><span>Prompt tokens</span><strong>{metrics.prompt_tokens ?? "—"}</strong></div>
+          <div className="metric"><span>Completion tokens</span><strong>{metrics.completion_tokens ?? "—"}</strong></div>
+        </div>
+        <div className="validation-row"><span className={`validation-dot ${result?.is_grounded ? "good" : "warn"}`} /><div><strong>{result?.is_grounded ? "Grounding check passed" : "Grounding check needs review"}</strong><p>{validation.reason || "Validator did not provide a reason."}</p></div></div>
+        {validation.unsupported_claims?.length > 0 && <div className="claims"><strong>Unsupported claims flagged</strong><ul>{validation.unsupported_claims.map((claim, i) => <li key={i}>{String(claim)}</li>)}</ul></div>}
+        {result?.plan && <details className="raw-plan"><summary>Execution plan <span className="chevron">⌄</span></summary><pre className="json-block">{pretty(result.plan)}</pre></details>}
+        {steps.length > 0 && <details className="raw-plan"><summary>Raw agent outputs <span className="chevron">⌄</span></summary>{steps.map((step, index) => <div key={step.step_id ?? index}><strong className="raw-step-label">{step.agent || "Agent"} · {step.task || "Execution step"}</strong><EvidenceValue value={step.result} /></div>)}</details>}
+      </details>
     </section>
   );
 }
