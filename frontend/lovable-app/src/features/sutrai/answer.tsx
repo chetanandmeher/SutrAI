@@ -3,6 +3,7 @@ import { Check, Copy, Download, ArrowDownUp, MessageSquareQuote, CheckCircle2, A
 import { Button } from "@/components/ui/button";
 import { DemoBadge } from "./workspace";
 import { toCsv, type Analysis, type Row } from "./data";
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const text = (v: unknown) => (typeof v === "object" ? JSON.stringify(v) : String(v ?? "—"));
 const label = (value: string) => value.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -39,7 +40,7 @@ export function Answer({ analysis }: { analysis: Analysis }) {
     ? [...analysis.rows].filter((row) => typeof row[valueKey] === "number")
         .sort((a, b) => Number(b[valueKey]) - Number(a[valueKey])).slice(0, 10)
     : [];
-  const maxValue = chartRows.length ? Math.max(...chartRows.map((row) => Number(row[valueKey]))) : 0;
+  const graphData = chartRows.map((row) => ({ category: label(text(row[categoryKey!])), value: Number(row[valueKey!]) }));
   async function copy() {
     try { await navigator.clipboard.writeText(analysis.summary); setCopied(true); setCopyError(""); setTimeout(() => setCopied(false), 2000); }
     catch { setCopyError("Copy unavailable. Select the summary to copy it manually."); }
@@ -73,16 +74,42 @@ export function Answer({ analysis }: { analysis: Analysis }) {
         <span className="eyebrow">EXECUTIVE SUMMARY</span>
         <p>{summary || (analysis.rows.length ? "The query returned structured results. Review the ranking and detailed data below." : analysis.summary)}</p>
       </div>
-      {chartRows.length > 0 && (
-        <section className="answer-chart" aria-label="Results visualization">
-          <div className="answer-chart-heading"><div><BarChart3 size={16} /><h3>Top results</h3></div><span>{label(valueKey!)} · {isRevenue(valueKey!) ? "USD" : "value"}</span></div>
-          <div className="answer-bars">
-            {chartRows.map((row, index) => (
-              <div className="answer-bar-row" key={String(row[categoryKey!])}>
-                <div className="answer-bar-label"><span>{index + 1}. {label(text(row[categoryKey!]))}</span><strong>{formatValue(valueKey!, row[valueKey!])}</strong></div>
-                <div className="answer-bar-track"><div style={{ width: maxValue ? `${Math.max(0, Number(row[valueKey]) / maxValue * 100)}%` : "0%" }} /></div>
-              </div>
-            ))}
+      {graphData.length > 0 && (
+        <section className="answer-chart" aria-label="Results bar chart">
+          <div className="answer-chart-heading">
+            <div><BarChart3 size={16} /><h3>Revenue by category</h3></div>
+            <span>{label(valueKey!)} · {isRevenue(valueKey!) ? "USD" : "value"}</span>
+          </div>
+          <div className="answer-graph">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={graphData} margin={{ top: 12, right: 18, left: 12, bottom: 72 }}>
+                <CartesianGrid stroke="var(--border)" strokeDasharray="3 4" vertical={false} />
+                <XAxis
+                  dataKey="category"
+                  interval={0}
+                  angle={-32}
+                  textAnchor="end"
+                  height={82}
+                  tick={{ fill: "var(--muted-foreground)", fontSize: 10 }}
+                  axisLine={{ stroke: "var(--border)" }}
+                  tickLine={false}
+                />
+                <YAxis
+                  width={76}
+                  tickFormatter={(value: number) => isRevenue(valueKey!) ? `$${(value / 1000).toFixed(0)}k` : new Intl.NumberFormat("en-US", { notation: "compact" }).format(value)}
+                  tick={{ fill: "var(--muted-foreground)", fontSize: 10 }}
+                  axisLine={false}
+                  tickLine={false}
+                />
+                <Tooltip
+                  formatter={(value) => [formatValue(valueKey!, Number(value)), label(valueKey!)]}
+                  labelStyle={{ color: "var(--foreground)", fontWeight: 600 }}
+                  contentStyle={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 6, fontSize: 11 }}
+                  cursor={{ fill: "var(--muted)", opacity: 0.65 }}
+                />
+                <Bar dataKey="value" name={label(valueKey!)} fill="var(--chart-main)" radius={[4, 4, 0, 0]} maxBarSize={54} />
+              </BarChart>
+            </ResponsiveContainer>
           </div>
         </section>
       )}
