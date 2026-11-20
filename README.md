@@ -53,6 +53,8 @@ flowchart TD
 - Answer synthesis that separates numerical SQL evidence from qualitative review evidence.
 - LLM-based grounding validation.
 - Per-request latency and prompt/completion token accounting.
+- Grounding validation details and expandable execution diagnostics in the UI.
+- Interactive result visualizations, formatted tables, and CSV export for structured SQL results.
 - Retrieval evaluation using manually labeled relevance judgments.
 
 ## Technology stack
@@ -180,15 +182,28 @@ The interactive API documentation is available at:
 
 ### 8. Run the web frontend
 
+The frontend is a React + Vite application located at `frontend/lovable-app`.
+
 Keep the FastAPI server running in one terminal. In a second PowerShell terminal, run:
 
 ```powershell
-cd frontend
+cd frontend/lovable-app
 npm install
 npm run dev
 ```
 
-Open the local Vite URL printed in the terminal (normally http://127.0.0.1:5173). The Vite development server proxies `/api/health` and `/api/ask` to the FastAPI server at `http://127.0.0.1:8000`, so the browser UI and API work together without configuring browser CORS for local development.
+Open the URL printed by Vite (the current project setup uses `http://localhost:8080`).
+
+In the UI, open **Data Sources & System Status**, set the API base URL to `http://127.0.0.1:8000`, save it, select **API mode**, and check the connection health.
+
+If the browser blocks requests because of CORS, stop Uvicorn and start it with the frontend origin allowed:
+
+```powershell
+$env:SUTRAI_CORS_ORIGINS="http://localhost:8080,http://127.0.0.1:8080"
+uvicorn api.main:app --reload
+```
+
+The API also allows the default Vite development and preview origins. You can configure additional trusted origins using the comma-separated `SUTRAI_CORS_ORIGINS` environment variable.
 
 ## API
 
@@ -285,7 +300,7 @@ The existing tests cover planner-output parsing and SQL validation, including re
 - The relevance pool is manually judged and not exhaustive.
 - Hybrid retrieval is implemented as a search function but is not yet used by the RAG agent.
 - Grounding validation currently reports whether the answer is supported; the orchestrator still returns the generated answer when validation is false.
-- The React + Vite frontend is available in `frontend/`. It provides a chat workspace, API status, answer rendering, execution evidence, grounding status, and request metrics. It is an initial local-development UI; conversation history is held in browser memory and is not persisted.
+- The React + Vite frontend is available in `frontend/lovable-app/`. It provides a workspace, API status and mode selection, answer rendering, interactive charts for numeric results, formatted result tables, CSV export, review evidence, grounding status, and expandable diagnostics. Conversation history is held in browser memory and is not persisted.
 - Kafka, Redis, and distributed task processing are not part of the current implementation.
 
 ## Project structure
